@@ -1,0 +1,1245 @@
+{
+  "source": "https://www.arcgis.com/home/item.html?id=597555ce8e4a4892a030784a7c657fdd",
+  "service": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0",
+  "retrievedAt": "2026-10-10T06:20:24.998894Z",
+  "datasetPublication": "2024-09-30",
+  "sourceDateRange": [
+    "2015-09-30",
+    "2023-08-01"
+  ],
+  "archivedAt": "2025-08-21",
+  "publisher": "ORNL / DOE CESER; public HIFLD copy hosted by NBAM_Org",
+  "license": "None (Public Domain Information); None (Public Use). Read source metadata for limitations.",
+  "sourceRecordCount": 2931,
+  "includedCount": 2686,
+  "excludedCount": 245,
+  "excluded": [
+    {
+      "id": "1702",
+      "name": "CITY OF BIGGS - (CA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18959",
+      "name": "CITY OF TROY - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5928",
+      "name": "TOWN OF ETNA GREEN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12242",
+      "name": "CITY OF MEADE - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20192",
+      "name": "CITY OF WATHENA - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20227",
+      "name": "CITY OF WAYNOKA - (OK)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3366",
+      "name": "CITY OF CHAPMAN - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5372",
+      "name": "TOWN OF DREXEL - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5802",
+      "name": "CITY OF ELLINWOOD - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7677",
+      "name": "CITY OF GRIDLEY - (CA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8628",
+      "name": "CITY OF HILLSBORO - (ND)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10260",
+      "name": "CITY OF KIMBALL - (NE)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11376",
+      "name": "TOWN OF LYONS - (CO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11965",
+      "name": "CITY OF MCCLEARY - (WA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12660",
+      "name": "VILLAGE OF MINSTER - (OH)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1512",
+      "name": "CITY OF BELLEVILLE - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15433",
+      "name": "TOWN OF PROSPERITY - (SC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17827",
+      "name": "TOWN OF SPRINGER - (NM)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18277",
+      "name": "CITY OF SULLIVAN - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "2550",
+      "name": "CITY OF BURLINGTON - (CO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "40369",
+      "name": "CITY OF OXFORD - (GA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10040",
+      "name": "CITY OF KASSON",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12541",
+      "name": "CITY OF MILFORD - (IA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13467",
+      "name": "NEW LONDON ELECTRIC&WATER UTIL",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13602",
+      "name": "CITY OF NILES - (OH)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16198",
+      "name": "CITY OF ROCK FALLS - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18805",
+      "name": "TOWN OF THATCHER- (AZ)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "21021",
+      "name": "CITY OF WRAY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3208",
+      "name": "CEDARBURG LIGHT & WATER COMM",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "408",
+      "name": "CITY OF ALTAMONT - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4739",
+      "name": "TOWN OF DALLAS - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "58124",
+      "name": "CITY OF WINTER PARK - (FL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8348",
+      "name": "CITY OF HEALDSBURG - (CA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10056",
+      "name": "CITY OF KAUKAUNA",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1036",
+      "name": "TOWN OF AYDEN - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10669",
+      "name": "TOWN OF LANDIS - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13095",
+      "name": "CITY OF MULVANE - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14947",
+      "name": "CITY OF PHILADELPHIA - (MS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16914",
+      "name": "TOWN OF SELMA - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17324",
+      "name": "SLINGER UTILITIES",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17668",
+      "name": "CITY OF SOUTHPORT - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18181",
+      "name": "CITY OF STOUGHTON - (WI)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20739",
+      "name": "CITY OF WILLOW SPRINGS - (MO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3405",
+      "name": "VILLAGE OF CHATHAM - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4627",
+      "name": "CITY OF CUMBERLAND - (WI)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5551",
+      "name": "CITY OF EAGLE RIVER - (WI)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6610",
+      "name": "CITY OF FORT MORGAN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7096",
+      "name": "CITY OF GENEVA- (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7496",
+      "name": "TOWN OF GRANITE FALLS - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "918",
+      "name": "CITY OF ASPEN- (CO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10324",
+      "name": "CITY OF KINGS MOUNTAIN - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10800",
+      "name": "CITY OF LAWRENCEVILLE - (GA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10966",
+      "name": "CITY OF LEXINGTON - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11187",
+      "name": "CITY OF LONGMONT",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12298",
+      "name": "CITY OF MENASHA - (WI)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12801",
+      "name": "CITY OF MONROE - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12944",
+      "name": "CITY OF MORGANTON - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13481",
+      "name": "CITY OF NEW RICHMOND",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13547",
+      "name": "NEWNAN WTR, SEWER & LIGHT COMM",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13561",
+      "name": "CITY OF NEWTON - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14146",
+      "name": "CITY OF OPELIKA - (AL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15783",
+      "name": "CITY OF REDDING - (CA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17839",
+      "name": "CITY OF SPRINGFIELD - (OR)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17860",
+      "name": "CITY OF ST CHARLES - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18429",
+      "name": "CITY OF TACOMA - (WA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20225",
+      "name": "TOWN OF WAYNESVILLE - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20836",
+      "name": "CITY OF WINTERVILLE - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "2487",
+      "name": "CITY OF BUFORD",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "308",
+      "name": "CITY OF ACWORTH - (GA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3634",
+      "name": "CITY OF NIXA - (MO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3731",
+      "name": "TOWN OF CLAYTON",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4078",
+      "name": "CITY OF COMANCHE - (OK)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4280",
+      "name": "CONWAY CORPORATION",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4365",
+      "name": "TOWN OF CORNELIUS - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4433",
+      "name": "CITY OF COVINGTON - (GA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4744",
+      "name": "DALTON UTILITIES",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6638",
+      "name": "CITY OF FOUNTAIN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6709",
+      "name": "EASLEY COMBINED UTILITY SYSTEM",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6764",
+      "name": "VILLAGE OF FREEBURG - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6909",
+      "name": "GAINESVILLE REGIONAL UTILITIES",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6949",
+      "name": "CITY OF GARDNER - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8212",
+      "name": "HARTFORD ELECTRIC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8449",
+      "name": "HENDERSON CITY UTILITY COMM",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8515",
+      "name": "CITY OF HERMISTON",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9087",
+      "name": "TOWN OF HUNTERSVILLE - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13208",
+      "name": "CITY OF NAPERVILLE - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13485",
+      "name": "NEW SMYRNA BEACH CITY OF",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13521",
+      "name": "CITY OF NEWBERRY - (FL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1586",
+      "name": "CITY OF BENTONVILLE - (AR)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16181",
+      "name": "ROCHESTER PUBLIC UTILITIES",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16555",
+      "name": "SALEM ELECTRIC - (OR)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17833",
+      "name": "CITY UTILITIES OF SPRINGFIELD - (MO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18022",
+      "name": "CITY OF STATESVILLE - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19974",
+      "name": "TOWN OF WAKE FOREST - (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4045",
+      "name": "CITY OF COLUMBIA - (MO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6604",
+      "name": "CITY OF FORT COLLINS - (CO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6616",
+      "name": "FORT PIERCE UTILITIES AUTHORITY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7129",
+      "name": "CITY OF GEORGETOWN - (TX)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "719",
+      "name": "TOWN OF APEX- (NC)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10454",
+      "name": "KOOTENAI ELECTRIC COOPERATIVE",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12312",
+      "name": "MERCED IRRIGATION DISTRICT",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13027",
+      "name": "MOUNTAIN ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14610",
+      "name": "ORLANDO UTILITIES COMM",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19981",
+      "name": "WAKE ELECTRIC MEMBERSHIP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "27238",
+      "name": "SOUTHWEST ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3989",
+      "name": "CITY OF COLORADO SPRINGS - (CO)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4524",
+      "name": "CRAWFORD ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5063",
+      "name": "CITY OF DENTON - (TX)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7654",
+      "name": "GREER COMMISSION OF PUBLIC WKS",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10066",
+      "name": "K C ELECTRIC ASSOCIATION",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12616",
+      "name": "CITY OF MILTON - (WA)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12860",
+      "name": "MORGAN COUNTY RURAL ELEC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16587",
+      "name": "SALT RIVER ELECTRIC COOP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18498",
+      "name": "TAYLOR COUNTY RURAL E C C",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20222",
+      "name": "WAYNE-WHITE COUNTIES ELEC COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "31833",
+      "name": "OKEFENOKE RURAL EL MEMBER CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4432",
+      "name": "COWETA-FAYETTE EL MEMBER CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5086",
+      "name": "DELTA MONTROSE ELECTRIC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7460",
+      "name": "GOODHUE COUNTY COOP ELEC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7548",
+      "name": "PUD NO 1 OF GRAYS HARBOR COUNTY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7787",
+      "name": "GUNNISON COUNTY ELEC ASSN.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9475",
+      "name": "ITASCA-MANTRAP CO-OP ELECTRICAL ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10000",
+      "name": "EVERGY METRO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1015",
+      "name": "AUSTIN ENERGY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10681",
+      "name": "LANE ELECTRIC COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11208",
+      "name": "LOS ANGELES DEPARTMENT OF WATER & POWER",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11345",
+      "name": "LYON ELECTRIC COOPERATIVE, INC.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "11910",
+      "name": "MCLEOD COOPERATIVE POWER ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12351",
+      "name": "CITY OF MESA - (AZ)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13058",
+      "name": "MOUNTAIN VIEW ELEC ASSN, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13651",
+      "name": "NOLIN RURAL ELECTRIC COOP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13684",
+      "name": "NOBLES COOPERATIVE ELECTRIC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14251",
+      "name": "OWEN ELECTRIC COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14398",
+      "name": "PALMETTO ELECTRIC COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14468",
+      "name": "PEOPLE'S COOPERATIVE SERVICES",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14606",
+      "name": "PEACE RIVER ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14668",
+      "name": "PENINSULA LIGHT COMPANY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15257",
+      "name": "POUDRE VALLEY REA, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1613",
+      "name": "BERKELEY ELECTRIC COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16603",
+      "name": "SAN LUIS VALLEY R E C, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16606",
+      "name": "SANTEE ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16616",
+      "name": "SAN ISABEL ELECTRIC ASSN, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17044",
+      "name": "SHELBY ENERGY CO-OP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17267",
+      "name": "SIOUX VALLEY SW ELEC COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17564",
+      "name": "SOUTH KENTUCKY RURAL E C C",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17592",
+      "name": "SOUTHEAST COLORADO POWER ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17697",
+      "name": "SOUTHWESTERN ELECTRIC COOP INC - (IL)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18047",
+      "name": "STEELE-WASECA COOPERATIVE ELECTRIC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1884",
+      "name": "BENCO ELECTRIC COOPERATIVE",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19157",
+      "name": "MIENERGY COOPERATIVE",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19791",
+      "name": "VERMONT ELECTRIC COOPERATIVE, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20130",
+      "name": "WARREN RURAL ELEC COOP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20138",
+      "name": "WASCO ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20382",
+      "name": "CITY OF WEST MEMPHIS - (AR)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20996",
+      "name": "WRIGHT-HENNEPIN COOP ELEC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "21075",
+      "name": "Y-W ELECTRIC ASSN INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "26939",
+      "name": "RED RIVER VALLEY COOP PWR ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "27422",
+      "name": "TODD-WADENA ELECTRIC COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3687",
+      "name": "CLARK ENERGY COOP INC - (KY)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "40165",
+      "name": "DIXIE ESCALANTE R E A, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4065",
+      "name": "CITY OF COLUMBUS - (OH)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4176",
+      "name": "CONNECTICUT LIGHT & POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4317",
+      "name": "COOS-CURRY ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4622",
+      "name": "CUMBERLAND VALLEY ELECTRIC, INC.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6194",
+      "name": "FARMERS RURAL ELECTRIC COOP CORP - (KY)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6258",
+      "name": "FEDERATED RURAL ELECTRIC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6411",
+      "name": "FLINT ELECTRIC MEMBERSHIP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6442",
+      "name": "FLEMING-MASON ENERGY COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6782",
+      "name": "FREEBORN MOWER ELECTRIC COOPERATIVE",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "7563",
+      "name": "GRAND VALLEY POWER",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "84",
+      "name": "A & N ELECTRIC COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8570",
+      "name": "HIGHLINE ELECTRIC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "8773",
+      "name": "HOLY CROSS ELECTRIC ASSN, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9292",
+      "name": "INTER COUNTY ENERGY COOP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9575",
+      "name": "JACKSON ENERGY COOP CORP - (KY)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "963",
+      "name": "ATLANTIC CITY ELECTRIC CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9689",
+      "name": "JEFFERSON ELECTRIC MEMBER CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9996",
+      "name": "CITY OF KANSAS CITY - (KS)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10171",
+      "name": "KENTUCKY UTILITIES CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10433",
+      "name": "KODIAK ELECTRIC ASSN INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10451",
+      "name": "KOTZEBUE ELECTRIC ASSN INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10455",
+      "name": "KOKHANOK VILLAGE COUNCIL",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10491",
+      "name": "KWIG POWER COMPANY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10618",
+      "name": "LAKE REGION ELECTRIC COOPERATIVE - (MN)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "10697",
+      "name": "LAKE COUNTRY POWER",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12199",
+      "name": "MONTANA-DAKOTA UTILITIES CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12485",
+      "name": "MIDDLE KUSKOKWIM ELEC COOP INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12524",
+      "name": "MIDWEST ENERGY INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12647",
+      "name": "ALLETE, INC.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12651",
+      "name": "MINNESOTA VALLEY ELECTRIC COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1276",
+      "name": "BARROW UTILS & ELEC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "12825",
+      "name": "NORTHWESTERN ENERGY LLC - (MT)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13211",
+      "name": "NAPAKIAK IRCINRAQ POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13781",
+      "name": "NORTHERN STATES POWER CO - MINNESOTA",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "13870",
+      "name": "NUSHAGAK ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14232",
+      "name": "OTTER TAIL POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14328",
+      "name": "PACIFIC GAS & ELECTRIC CO.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14354",
+      "name": "PACIFICORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "14711",
+      "name": "PENNSYLVANIA ELECTRIC CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15248",
+      "name": "PORTLAND GENERAL ELECTRIC CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15466",
+      "name": "PUBLIC SERVICE CO OF COLORADO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "15500",
+      "name": "PUGET SOUND ENERGY INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "16368",
+      "name": "RUNESTONE ELECTRIC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1675",
+      "name": "BIG HORN RURAL ELECTRIC CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1738",
+      "name": "BONNEVILLE POWER ADMINISTRATION",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1747",
+      "name": "BIRCH CREEK VILLAGE ELEC UTIL - (AK)",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17593",
+      "name": "SOUTHEAST ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17609",
+      "name": "SOUTHERN CALIFORNIA EDISON CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "17684",
+      "name": "SOUTHWEST LOUISIANA E M C",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18019",
+      "name": "STEARNS COOPERATIVE ELEC ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "18480",
+      "name": "TATITLEK ELECTRIC UTILITY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "1886",
+      "name": "BLUE GRASS ENERGY COOP CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19156",
+      "name": "POWDER RIVER ENERGY CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "192",
+      "name": "AKIACHAK NATIVE COMMUNITY ELECTRIC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19267",
+      "name": "TUNTUTULIAK COMM SERVICES ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19277",
+      "name": "TDX NORTH SLOPE GENERATING CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19545",
+      "name": "BLACK HILLS POWER, INC.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19558",
+      "name": "HOMER ELECTRIC ASSN INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "19876",
+      "name": "VIRGINIA ELECTRIC & POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "20910",
+      "name": "WOLVERINE POWER SUPPLY COOP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "22053",
+      "name": "KENTUCKY POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "221",
+      "name": "ALASKA VILLAGE ELEC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "26616",
+      "name": "NORTH SLOPE BOROUGH POWER & LIGHT",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "27000",
+      "name": "WAPA-- WESTERN AREA POWER ADMINISTRATION",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3265",
+      "name": "CLECO POWER LLC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3465",
+      "name": "CHITINA ELECTRIC INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "3522",
+      "name": "CHUGACH ELECTRIC ASSN INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "40215",
+      "name": "CORDOVA ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "40304",
+      "name": "MINNESOTA VALLEY COOP L&P ASSN",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4329",
+      "name": "COPPER VALLEY ELEC ASSN, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "4959",
+      "name": "ANIAK LIGHT & POWER CO INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5109",
+      "name": "DTE ELECTRIC COMPANY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5574",
+      "name": "EAST CENTRAL ENERGY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "5580",
+      "name": "EAST KENTUCKY POWER COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "56146",
+      "name": "BLACK HILLS COLORADO ELECTRIC, LLC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "60631",
+      "name": "UPPER MICHIGAN ENERGY RESOURCES CORP.",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "6452",
+      "name": "FLORIDA POWER & LIGHT CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "733",
+      "name": "APPALACHIAN POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9188",
+      "name": "I-N-N ELECTRIC COOP, INC",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9191",
+      "name": "IDAHO POWER CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9416",
+      "name": "IPNATCHIAQ ELECTRIC COMPANY",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9417",
+      "name": "INTERSTATE POWER AND LIGHT CO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9832",
+      "name": "KUIGGLUUM KALLUGVIA",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "9964",
+      "name": "KENERGY CORP",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    },
+    {
+      "id": "NA2",
+      "name": "BC HYDRO",
+      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+    }
+  ],
+  "processing": "GEOS validity checks; invalid generalized polygons retried at higher/native resolution. No geometry repair. Topology-preserving generalization at 0.002 degrees for regional screening; area-based exposure is approximate.",
+  "limitations": "Archived, not current legal boundaries. Source geometries may be county approximations, overlap or omit territories. Source attributes have varying vintages. STATE and CITY are provider entity attributes, not a computed list of every state/city intersecting the territory. Customers are entity totals from YEAR, never modeled exposed customers."
+}

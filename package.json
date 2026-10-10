@@ -1,0 +1,39 @@
+{
+  "name": "stormgrid-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "prepare:map": "node scripts/prepare-map.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@turf/turf": "^7.3.0",
+    "lucide-react": "^0.468.0",
+    "maplibre-gl": "^5.6.2",
+    "next": "16.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "undici": "^8.11.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "prettier": "^3.9.9",
+    "tailwindcss": "^4.1.0",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.9.0",
+    "us-atlas": "^3.0.1",
+    "vitest": "^3.2.0",
+    "world-atlas": "^2.0.2"
+  }
+}
