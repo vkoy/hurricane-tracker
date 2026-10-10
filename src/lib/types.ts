@@ -34,6 +34,7 @@ export interface SourceStatus {
   refreshMinutes: number;
   message: string;
   license: string;
+  licenseUrl?: string;
 }
 export interface Storm {
   id: string;
@@ -80,6 +81,11 @@ export interface UtilityProperties {
   clientIds?: string[];
   clientNames?: string[];
   clientAliases?: string[];
+  country?: string;
+  sourceRetrievedAt?: string;
+  boundaryNotes?: string;
+  licenseUrl?: string;
+  attribution?: string;
 }
 export interface ClientStatus {
   id: string;

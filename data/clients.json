@@ -358,15 +358,18 @@
     "id": "hydro-one",
     "name": "Hydro One",
     "aliases": [],
-    "records": [],
-    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+    "records": [
+      { "id": "ON-ED-2003-0043", "name": "Hydro One Networks Inc." },
+      { "id": "ON-ED-2003-0037", "name": "Hydro One Remote Communities Inc." }
+    ],
+    "notes": "Partial Ontario government snapshot: Remote Communities only. Hydro One Networks, the main distribution territory, is excluded because native individual polygon rings are invalid. Scores describe the displayed subsidiary only; missing main-territory exposure is unknown. No corporate aggregate is calculated."
   },
   {
     "id": "hydro-ottawa",
     "name": "Hydro Ottawa",
     "aliases": [],
-    "records": [],
-    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+    "records": [{ "id": "ON-ED-2002-0556", "name": "Hydro Ottawa Limited" }],
+    "notes": "Ontario Ministry of Energy / Ontario Energy Board service-area snapshot under the Open Government Licence – Ontario. Valid overlapping components dissolved; generalized for regional screening. Individual boundary effective date and customer data unavailable."
   },
   {
     "id": "jea",
@@ -656,7 +659,12 @@
     "id": "toronto",
     "name": "Toronto Hydro",
     "aliases": [],
-    "records": [],
-    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+    "records": [
+      {
+        "id": "ON-ED-2002-0497",
+        "name": "Toronto Hydro-Electric System Limited"
+      }
+    ],
+    "notes": "Ontario Ministry of Energy / Ontario Energy Board service-area snapshot under the Open Government Licence – Ontario. Generalized for regional screening; not a precise legal boundary. Individual boundary effective date and customer data unavailable."
   }
 ]

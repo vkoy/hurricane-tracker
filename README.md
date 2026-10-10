@@ -14,10 +14,11 @@ A responsive storm and electric-grid operations dashboard built with Next.js, Re
 
 The operational dashboard is restricted server-side to the requested client list in `data/clients.json`. It contains **47 clients**, with PSEGLI and its muni portal combined into one entry as requested. CSU means Colorado Springs Utilities. The full national archive remains an ingestion reference; unlisted utilities are excluded before spatial scoring and are not sent in map features, ranking assessments, or operational exports.
 
-- **42 clients match 71 distinct archived operating-company territories.** Parent companies (including AEP, Ameren, Evergy, Eversource, FirstEnergy, LG&E/KU, National Grid and PHI) can have several rows, each with its own actual territory score. No unsupported corporate aggregate score or customer sum is produced. Current ownership and complete group coverage are not established by an archive match.
-- **Altice, Hydro One, Hydro Ottawa, Nova Scotia Power and Toronto Hydro remain visible but have no connected boundary.** Altice needs a permitted telecommunications/network footprint; the four Canadian clients need authoritative permitted Canadian boundary data. Selecting one shows an empty utility layer and unavailable exposure, not another client's geography or zero risk.
+- **44 clients have all configured boundary records, Hydro One has partial coverage, and two clients await boundaries.** The 74 operating-company territories comprise 71 U.S. archive records and three reviewed Ontario records. Parent companies (including AEP, Ameren, Evergy, Eversource, FirstEnergy, LG&E/KU, National Grid and PHI) can have several rows, each with its own actual territory score. No unsupported corporate aggregate score or customer sum is produced. A source match does not establish current ownership or complete group coverage.
+- **Altice and Nova Scotia Power remain visible but have no connected boundary.** Altice needs a permitted telecommunications/network footprint; Nova Scotia Power needs a verified reusable service-area polygon. Selecting either shows an empty utility layer and unavailable exposure, not another client's geography or zero risk.
+- **Hydro Ottawa and Toronto Hydro** use government-published Ontario boundaries. **Hydro One includes Remote Communities only**: the main Hydro One Networks polygon has invalid individual rings and is excluded. Its exposure is unknown, not zero. The selector and source panel explicitly mark Hydro One partial.
 - Use **Client portfolio** to filter both map and rankings to one client. Search accepts the provided names and aliases, including APC, AE, BG&E, CenHud, DESC, GPC, MPC, OGE, ORU, OUC, PEC, PHI, PNM, REC, SDGE, SECO, SMECO and TNMP. The PSEGLI muni portal is a search alias.
-- Each registry member uses an explicit archive ID **and** exact normalized source name. No fuzzy name matching is used: Santee Electric Cooperative is not Santee Cooper; Sumter EMC in Georgia is not SECO in Florida; Austin, Minnesota is not Austin Energy. National Grid does not include Narragansett/Rhode Island Energy. Dominion Virginia and DESC are separate entries. PSEGLI uses the archived LIPA service footprint and is distinct from PSE&G.
+- Each registry member uses an explicit source ID **and** exact normalized source name. Ontario IDs are namespaced OEB licence numbers (`ON-ED-…`); U.S. IDs retain their archive identities. No fuzzy name matching is used: Santee Electric Cooperative is not Santee Cooper; Sumter EMC in Georgia is not SECO in Florida; Austin, Minnesota is not Austin Energy. National Grid does not include Narragansett/Rhode Island Energy. Dominion Virginia and DESC are separate entries. PSEGLI uses the archived LIPA service footprint and is distinct from PSE&G.
 - **Data sources → Client portfolio coverage** lists every client, available territories and limitations. Monitoring reports known unconnected clients as coverage warnings rather than network outages. A provider override also passes through this allowlist; update reviewed ID/name pairs if the provider uses different identities. Never bypass the allowlist with an approximate match.
 
 To change the portfolio, edit `data/clients.json`, verify each ID/name against the source, run `npm test`, and redeploy. Tests check the requested list size, alias handling, absence of unrelated utilities, ambiguous-name exclusions, parent-group gaps and missing Canadian/telecom coverage.
@@ -93,6 +94,21 @@ fallback then lasts only until restart. Attach the disk or correct the writable
 cache path to restore persistence.
 
 ## Data sources and actual verification
+
+### Ontario client boundaries
+
+The default providers also include three validated government-published Ontario
+territories: Toronto Hydro, Hydro Ottawa, and Hydro One Remote Communities. Hydro
+One Networks is excluded for invalid individual polygon rings. The client is
+explicitly marked partial. These are bundled, manually refreshed snapshots under
+the Open Government Licence – Ontario, not a live feed. Individual effective dates
+and customer vintages are unavailable. Source attribution, reuse links, retrieval
+time and exclusions appear in the application and exported records.
+
+See [the boundary source review](docs/boundary-sources.md) for provenance, licence
+evidence, geometry validation, reproduction commands and remaining Altice / Nova
+Scotia Power gaps. No additional runtime keys or network calls are required.
+Provider overrides replace both bundled sources; disabling archives disables both.
 
 ### Official NOAA NHC forecasts
 

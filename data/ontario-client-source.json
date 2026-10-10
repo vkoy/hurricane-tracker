@@ -1,0 +1,54 @@
+{
+  "source": "https://www.arcgis.com/home/item.html?id=94a074ee344e4c7fb60fed59171fd8bd",
+  "service": "https://services7.arcgis.com/6QOxmnOtgEvCBqJG/arcgis/rest/services/ENERGY_LDC_ED/FeatureServer/0",
+  "sourceItem": "da406a9978784582b7ffe0ed842a6833",
+  "officialCatalogueItem": "https://www.arcgis.com/home/item.html?id=1095a9f75eab4c23bb40c139825ead77",
+  "publisher": "Ontario Ministry of Energy / Ontario Energy Board",
+  "retrievedAt": "2026-10-10T08:22:13.673117Z",
+  "featureEffectiveDate": null,
+  "layerDataLastEditAt": "2025-11-24T15:57:12.909000Z",
+  "license": "Open Government Licence \u2013 Ontario",
+  "licenseUrl": "https://www.ontario.ca/page/open-government-licence-ontario",
+  "attribution": "Contains information licensed under the Open Government Licence \u2013 Ontario. Ontario Ministry of Energy / Ontario Energy Board.",
+  "licenseEvidence": "Open Government Licence \u2013 Ontario. You are encouraged to use the Information that is available under this licence with only a few conditions. Using Information under this licence1. Use of any Information indicates your acceptance of the terms below.2. The Information Provider grants you a worldwide, royalty-free, perpetual, non-exclusive licence to use the Information, including for commercial purposes, subject to the terms below. You are free to:3. Copy, modify, publish, translate, adapt, distribute or otherwise use the Information in any medium, mode or format for any lawful purpose. You must, where you do any of the above:4. Acknowledge the source of the Information by including any attribution statement specified by the Information Provider(s) and, where possible, provide a link to this licence. If the Information Provider does not provide a specific attribution statement, or if you are using Information from several Information Providers and multiple attributions are not practical for your product or application, you must use the following attribution statement: Contains information licensed under the Open Government Licence \u2013 Ontario.5. The terms of this licence are important, and if you fail to comply with any of them, the rights granted to you under this licence, or any similar licence granted by the Information Provider, will end automatically.Exemptions6. This licence does not grant you any right to use: a) Personal Information; b) Information or Records not accessible under the Freedom of Information and Protection of Privacy Act (Ontario); c) third party rights the Information Provider is not authorized to license; d) the names, crests, logos, or other official symbols of the Information Provider; and e) Information subject to other intellectual property rights, including patents, trade-marks and official marks.Non-endorsement7. This licence does not grant you any right to use the Information in a way that suggests any official status or that the Information Provider endorses you or your use of the Information.No warranty8. The Information is licensed \u201cas is\u201d, and the Information Provider excludes all representations, warranties, obligations, and liabilities, whether express or implied, to the maximum extent permitted by law.9. The Information Provider is not liable for any errors or omissions in the Information, and will not under any circumstances be liable for any direct, indirect, special, incidental, consequential, or other loss, injury or damage caused by its use or otherwise arising in connection with this licence or the Information, even if specifically advised of the possibility of such loss, injury or damage.Governing Law10. This licence is governed by the laws of the Province of Ontario and the applicable laws of Canada.11. Legal proceedings related to this licence may only be brought in the courts of Ontario.Definitions12. In this licence, the terms below have the following meanings: &amp;quot;Information&amp;quot; means information resources or Records protected by copyright or other information or Records that are offered for use under the terms of this licence. &amp;quot;Information Provider&amp;quot; means Her Majesty the Queen in right of Ontario. \u201cPersonal Information\u201d has the meaning set out in section 2(1) of the Freedom of Information and Protection of Privacy Act (Ontario). \u201cRecords\u201d has the meaning of \u201crecord\u201d as set out in the Freedom of Information and Protection of Privacy Act (Ontario). &amp;quot;You&amp;quot; means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.Versioning13. This is version 1.0 of the Open Government Licence \u2013 Ontario. The Information Provider may make changes to the terms of this licence from time to time and issue a new version of the licence. Your use of the Information will be governed by the terms of the licence in force as of the date you accessed the information.",
+  "requestedCount": 4,
+  "includedCount": 3,
+  "excluded": [
+    {
+      "id": "ON-ED-2003-0043",
+      "name": "Hydro One Networks Inc.",
+      "sourceObjectId": 31,
+      "sourceValidity": "Ring Self-intersection[-75.43897562 45.3395511840001]",
+      "sourceSha256": "2a53db033e2f68d9a2e7e01b8c88504bd33e31a2c65f0dd97325cd02a72c0bcb",
+      "reason": "An individual polygon is invalid; no repair attempted"
+    }
+  ],
+  "records": [
+    {
+      "id": "ON-ED-2003-0037",
+      "name": "Hydro One Remote Communities Inc.",
+      "sourceObjectId": 32,
+      "sourceValidity": "Nested shells[-91.8279781999999 51.7290823000001]",
+      "sourceSha256": "364967344dbda547dce95c2c5dc22c1be9be06216b826bdd2266efe33e2c6dfe",
+      "processing": "Overlapping valid source components dissolved with coverage-preservation checks; generalized at 0.002 degrees for regional screening. No individual ring repair."
+    },
+    {
+      "id": "ON-ED-2002-0556",
+      "name": "Hydro Ottawa Limited",
+      "sourceObjectId": 33,
+      "sourceValidity": "Nested shells[-75.441615323 45.34240243]",
+      "sourceSha256": "4cbf27180ae13b0f22331afd034c2035f74dd37240165167aa9e3b41307ac83e",
+      "processing": "Overlapping valid source components dissolved with coverage-preservation checks; generalized at 0.002 degrees for regional screening. No individual ring repair."
+    },
+    {
+      "id": "ON-ED-2002-0497",
+      "name": "Toronto Hydro-Electric System Limited",
+      "sourceObjectId": 56,
+      "sourceValidity": "Valid Geometry",
+      "sourceSha256": "0817433aec0368c7589c1f119fcfe2fad543aaa4d48b3c5026174867c2a501ae",
+      "processing": "Native valid polygon; generalized at 0.002 degrees for regional screening. No individual ring repair."
+    }
+  ],
+  "limitations": "Illustrative government-published service areas; not current legal boundaries. Layer edit time is not a per-feature effective date. Hydro One Networks is excluded if any individual ring is invalid; Remote Communities alone is not complete Hydro One coverage. Customer counts and infrastructure exposure are not supplied.",
+  "refresh": "Manual reviewed snapshot import and redeploy; no runtime calls or guaranteed provider update interval/quota. Public ArcGIS queries; no key required at retrieval."
+}

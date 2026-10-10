@@ -992,7 +992,7 @@ export default function Dashboard() {
               <p>
                 {selectedClient
                   ? `${selectedClient.territoryIds.length} mapped operating-company territories`
-                  : `${data.clients.filter((c) => c.territoryIds.length).length} clients mapped · ${data.clients.filter((c) => !c.territoryIds.length).length} awaiting boundaries`}
+                  : `${data.clients.filter((c) => c.status === "mapped").length} mapped · ${data.clients.filter((c) => c.status === "partial").length} partial · ${data.clients.filter((c) => !c.territoryIds.length).length} awaiting boundaries`}
               </p>
               {selectedClient?.notes && <p>{selectedClient.notes}</p>}
               <button
@@ -1035,7 +1035,7 @@ export default function Dashboard() {
                   <Info size={11} />
                   <span>
                     {utilitiesSource?.state === "archived"
-                      ? "Archived boundaries · source dates 2015–2023"
+                      ? "Dated boundary snapshots · see each territory’s source"
                       : "Rankings use only available hazard inputs"}
                   </span>
                 </div>
@@ -1090,7 +1090,7 @@ export default function Dashboard() {
                         value={stateFilter}
                         onChange={(e) => setStateFilter(e.target.value)}
                       >
-                        <option value="">All states</option>
+                        <option value="">All states / provinces</option>
                         {[
                           ...new Set(
                             data?.utilities.features.map(
@@ -1579,7 +1579,8 @@ function UtilityDetails({
         {!!p.clientNames?.length && (
           <DetailRow label="Client" value={p.clientNames.join(" · ")} />
         )}
-        <DetailRow label="Entity state (source)" value={p.state} />
+        <DetailRow label="State / province (source)" value={p.state} />
+        {p.country && <DetailRow label="Country" value={p.country} />}
         <DetailRow label="Utility type" value={p.type} />
         <DetailRow label="Total customers" value={fmt(p.customers)} />
         <DetailRow
@@ -1594,6 +1595,19 @@ function UtilityDetails({
           label="Boundary source date"
           value={p.sourceDate ? date(p.sourceDate) : "Unavailable"}
         />
+        {p.sourceRetrievedAt && (
+          <DetailRow
+            label="Boundary snapshot retrieved"
+            value={date(p.sourceRetrievedAt, true)}
+          />
+        )}
+        {p.boundaryNotes && <p className="detail-note">{p.boundaryNotes}</p>}
+        {p.attribution && <p className="detail-note">{p.attribution}</p>}
+        {p.licenseUrl && (
+          <a href={p.licenseUrl} target="_blank" rel="noreferrer">
+            Boundary reuse licence <ExternalLink size={12} />
+          </a>
+        )}
         {p.website && (
           <a href={p.website} target="_blank" rel="noreferrer">
             Official utility website
@@ -1782,14 +1796,14 @@ function SourcesPanel({
           <p>
             <strong>{data.clients.length} clients</strong> ·{" "}
             {data.clients.filter((c) => c.territoryIds.length).length} have
-            matched archived boundaries. Only these clients appear on the map,
-            in rankings, and in exported operational data.
+            matched boundary records, including partial coverage. Only these
+            clients appear on the map, in rankings, and in exported operational
+            data.
           </p>
           <p>
             Parent groups are displayed as individual operating-company
-            territories, not a combined corporate exposure score. An archive
-            match does not establish current ownership or complete group
-            coverage.
+            territories, not a combined corporate exposure score. A source match
+            does not establish current ownership or complete group coverage.
           </p>
           <ul className="client-directory">
             {data.clients.map((c) => (
@@ -1878,9 +1892,11 @@ function SourcesPanel({
             <div>
               <dt>Minimum refresh interval</dt>
               <dd>
-                {s.refreshMinutes < 60
-                  ? `${s.refreshMinutes} minutes`
-                  : `${s.refreshMinutes / 60} hours`}
+                {s.refreshMinutes === 0
+                  ? "Bundled snapshot · manual refresh"
+                  : s.refreshMinutes < 60
+                    ? `${s.refreshMinutes} minutes`
+                    : `${s.refreshMinutes / 60} hours`}
               </dd>
             </div>
             <div>
@@ -1889,6 +1905,11 @@ function SourcesPanel({
             </div>
           </dl>
           <p className="license-note">{s.license}</p>
+          {s.licenseUrl && (
+            <a href={s.licenseUrl} target="_blank" rel="noreferrer">
+              Read reuse licence <ExternalLink size={12} />
+            </a>
+          )}
           <a href={s.url} target="_blank" rel="noreferrer">
             View original source
             <ExternalLink size={12} />
@@ -1904,13 +1925,14 @@ function SourcesPanel({
           <h4>Connecting utility territories</h4>
           <p>
             The default layer is a public HIFLD archive attributed to ORNL / DOE
-            CESER, with per-record source dates and explicit exclusions for
-            invalid geometries. Current boundaries can replace this archive
-            through reviewed GeoJSON and ArcGIS polygon services. An
-            administrator must supply the provider URL, field mapping,
-            attribution, source date, and permitted reuse terms. The archived
-            data is public domain; its age and geometric approximations limit
-            operational precision.
+            CESER plus a reviewed Ontario Ministry of Energy / Ontario Energy
+            Board snapshot under the Open Government Licence – Ontario. Source
+            dates and invalid-geometry exclusions are shown separately. Current
+            boundaries can replace these snapshots through reviewed GeoJSON and
+            ArcGIS polygon services. An administrator must supply the provider
+            URL, field mapping, attribution, source date, and permitted reuse
+            terms. The U.S. archive is public domain; snapshot age and geometric
+            approximations limit operational precision.
           </p>
           <p>
             See the project’s <code>README.md</code> and{" "}

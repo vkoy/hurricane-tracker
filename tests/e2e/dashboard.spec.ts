@@ -125,6 +125,60 @@ test("actual application renders an interactive basemap and truthful provider st
     ),
   ).toBe(true);
 });
+test("real Ontario snapshot supports selection, provenance, and partial Hydro One coverage", async ({
+  page,
+}, testInfo) => {
+  await page.goto("/");
+  if (testInfo.project.name === "mobile")
+    await page
+      .getByRole("button", { name: "Impact intelligence", exact: true })
+      .click();
+  const selector = page.getByRole("combobox", { name: "Select client" });
+  await expect(selector).toBeVisible({ timeout: 35000 });
+  await selector.selectOption("toronto");
+  await expect(page.getByTestId("map-shell")).toHaveAttribute(
+    "data-utility-count",
+    "1",
+  );
+  await page
+    .getByRole("button", { name: /Toronto Hydro-Electric System Limited/ })
+    .click();
+  await expect(
+    page.getByRole("heading", {
+      name: "Toronto Hydro-Electric System Limited",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Boundary reuse licence" }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.ontario.ca/page/open-government-licence-ontario",
+  );
+  await expect(page.getByText("Canada", { exact: true })).toBeVisible();
+  await selector.selectOption("hydro-one");
+  await expect(selector.locator("option:checked")).toHaveText(
+    "Hydro One — partial coverage",
+  );
+  await expect(page.locator(".client-scope")).toContainText(
+    "main distribution territory, is excluded",
+  );
+  await expect(
+    page.getByRole("button", { name: /Hydro One Remote Communities Inc/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: /Hydro One Networks Inc/ }),
+  ).toHaveCount(0);
+  await selector.selectOption("nsp");
+  await expect(
+    page.getByText("Client boundary unavailable", { exact: true }),
+  ).toBeVisible();
+  await expect(page.getByTestId("map-shell")).toHaveAttribute(
+    "data-utility-count",
+    "0",
+  );
+});
+
 test("verified no-storm response is distinct from provider unavailability", async ({
   page,
 }, testInfo) => {

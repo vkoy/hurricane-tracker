@@ -11,15 +11,29 @@ import type { FeatureCollection } from "geojson";
 const territories = JSON.parse(
   readFileSync("data/utility-territories.geojson", "utf8"),
 ) as FeatureCollection<Area, UtilityProperties>;
+territories.features.push(
+  ...JSON.parse(readFileSync("data/ontario-client-territories.geojson", "utf8"))
+    .features,
+);
 describe("client portfolio allowlist", () => {
   it("includes every requested client, merges the PSEGLI portal, and excludes other utilities", () => {
     const scoped = scopeUtilitiesToClients(territories);
     expect(CLIENTS).toHaveLength(47);
     expect(new Set(CLIENTS.map((c) => c.id)).size).toBe(47);
     expect(scoped.clients.filter((c) => c.status === "mapped")).toHaveLength(
-      42,
+      44,
     );
-    expect(scoped.utilities.features).toHaveLength(71);
+    expect(scoped.utilities.features).toHaveLength(74);
+    expect(scoped.clients.find((c) => c.id === "hydro-one")).toMatchObject({
+      status: "partial",
+      territoryIds: ["ON-ED-2003-0037"],
+      missingRecords: ["Hydro One Networks Inc."],
+    });
+    expect(
+      scoped.utilities.features.some(
+        (f) => f.properties.id === "ON-ED-2003-0043",
+      ),
+    ).toBe(false);
     expect(
       scoped.utilities.features.some(
         (f) => f.properties.name === "FLORIDA POWER & LIGHT CO",
@@ -67,9 +81,14 @@ describe("client portfolio allowlist", () => {
         .filter((c) => c.status === "unavailable")
         .map((c) => c.id)
         .sort(),
-    ).toEqual(["altice", "hydro-one", "hydro-ottawa", "nsp", "toronto"]);
+    ).toEqual(["altice", "nsp"]);
     const data = { ...result, assessments: [] } as unknown as DashboardData;
-    expect(clientView(data, "hydro-one")?.utilities.features).toEqual([]);
+    expect(clientView(data, "nsp")?.utilities.features).toEqual([]);
+    expect(
+      clientView(data, "toronto")?.utilities.features.map(
+        (f) => f.properties.id,
+      ),
+    ).toEqual(["ON-ED-2002-0497"]);
     expect(
       clientView(data, "apc")?.utilities.features.map((f) => f.properties.id),
     ).toEqual(["195"]);

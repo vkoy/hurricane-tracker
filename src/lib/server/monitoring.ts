@@ -41,7 +41,7 @@ export async function deploymentHealth() {
         checks.push({
           id: "client-coverage",
           status: missing.length ? "warning" : "ok",
-          message: `${data.clients.length - missing.length} of ${data.clients.length} clients have all configured archive records. ${missing.length ? `Incomplete or unavailable: ${missing.map((c) => c.name).join(", ")}.` : ""} Mapped archive records do not establish current or complete service coverage.`,
+          message: `${data.clients.length - missing.length} of ${data.clients.length} clients have all configured boundary records. ${missing.length ? `Incomplete or unavailable: ${missing.map((c) => c.name).join(", ")}.` : ""} Mapped records do not establish current or complete service coverage.`,
         });
       }
     } catch {

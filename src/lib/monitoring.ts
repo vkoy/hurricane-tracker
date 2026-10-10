@@ -14,7 +14,13 @@ export function evaluateSources(
   activeStormCount?: number,
 ): MonitorCheck[] {
   const checks: MonitorCheck[] = [];
-  for (const id of ["nhc-current", "nhc-gis", "utilities"]) {
+  const ids = new Set([
+    "nhc-current",
+    "nhc-gis",
+    "utilities",
+    ...sources.map((s) => s.id),
+  ]);
+  for (const id of ids) {
     const source = sources.find((s) => s.id === id);
     if (!source) {
       checks.push({

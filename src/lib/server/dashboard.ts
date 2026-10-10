@@ -9,7 +9,11 @@ export async function getDashboard(): Promise<DashboardData> {
     : DEFAULT_WEIGHTS;
   const [
     { storms, source: current },
-    { utilities: allUtilities, source: originalUtilitySource },
+    {
+      utilities: allUtilities,
+      source: originalUtilitySource,
+      supplementalSources = [],
+    },
   ] = await Promise.all([getStorms(), getUtilities()]);
   const { utilities, clients } = scopeUtilitiesToClients(allUtilities);
   const mapped = clients.filter((c) => c.territoryIds.length).length;
@@ -59,7 +63,7 @@ export async function getDashboard(): Promise<DashboardData> {
     geometry,
     utilities,
     assessments,
-    sources: [current, gis, utilitySource],
+    sources: [current, gis, utilitySource, ...supplementalSources],
     fetchedAt: new Date().toISOString(),
     weights,
     clients,

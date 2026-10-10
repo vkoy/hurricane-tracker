@@ -2,6 +2,7 @@ import type { FeatureCollection, Geometry, LineString, Point } from "geojson";
 import { area, booleanValid } from "@turf/turf";
 import { cached, fetchJson } from "./http";
 import { getUtilityArchive } from "./utility-archive";
+import { getOntarioUtilities } from "./ontario-utilities";
 import {
   emptyCollection,
   type Area,
@@ -524,10 +525,26 @@ export async function getUtilities(): Promise<{
   utilities: FeatureCollection<Area, UtilityProperties>;
   source: SourceStatus;
   coverage?: UtilityCoverage;
+  supplementalSources?: SourceStatus[];
 }> {
   const url = process.env.UTILITY_SERVICE_URL;
-  if (!url && process.env.UTILITY_DISABLE_ARCHIVE !== "true")
-    return getUtilityArchive();
+  if (!url && process.env.UTILITY_DISABLE_ARCHIVE !== "true") {
+    const [archive, ontario] = await Promise.all([
+      getUtilityArchive(),
+      getOntarioUtilities(),
+    ]);
+    return {
+      ...archive,
+      utilities: {
+        type: "FeatureCollection",
+        features: [
+          ...archive.utilities.features,
+          ...ontario.utilities.features,
+        ],
+      },
+      supplementalSources: [ontario.source],
+    };
+  }
   const source = status(
     "utilities",
     "Electric utility territories",

@@ -15,6 +15,29 @@ const live = (id: string): SourceStatus => ({
   message: "Retrieved",
 });
 describe("deployment monitoring", () => {
+  it("checks supplemental boundary providers and distinguishes snapshots from load failures", () => {
+    const sources = [live("nhc-current"), live("nhc-gis"), live("utilities")];
+    for (const [state, expected] of [
+      ["archived", "warning"],
+      ["unavailable", "error"],
+    ] as const) {
+      const checks = evaluateSources(
+        [
+          ...sources,
+          {
+            ...live("utilities-ontario"),
+            state,
+            fetchedAt: "2025-01-01T00:00:00Z",
+            refreshMinutes: 0,
+          },
+        ],
+        now,
+      );
+      expect(checks.find((c) => c.id === "utilities-ontario")?.status).toBe(
+        expected,
+      );
+    }
+  });
   it("accepts verified quiet weather and flags archives without a false outage", () => {
     const checks = evaluateSources(
       [

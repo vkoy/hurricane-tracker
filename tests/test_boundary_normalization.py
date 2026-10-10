@@ -10,6 +10,17 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 class BoundaryNormalizationTests(unittest.TestCase):
+    def test_ontario_snapshot_contains_only_valid_audited_records(self):
+        data = json.loads((ROOT/'data/ontario-client-territories.geojson').read_text())
+        manifest = json.loads((ROOT/'data/ontario-client-source.json').read_text())
+        features = data['features']
+        self.assertEqual(len(features), 3)
+        self.assertEqual(manifest['includedCount'] + len(manifest['excluded']), manifest['requestedCount'])
+        self.assertEqual({f['properties']['id'] for f in features}, {r['id'] for r in manifest['records']})
+        self.assertTrue(all(shape(f['geometry']).is_valid for f in features))
+        self.assertEqual([r['id'] for r in manifest['excluded']], ['ON-ED-2003-0043'])
+        self.assertTrue(all(f['properties']['customers'] is None for f in features))
+
     def test_overlapping_valid_components_preserve_coverage_without_double_counting(self):
         parts = [box(0,0,2,2), box(1,1,3,3), box(10,10,11,11)]
         result = module.dissolve_valid_components(MultiPolygon(parts))
