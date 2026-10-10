@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import maplibregl, {
-  type GeoJSONSource,
-  type Map as MapInstance,
-} from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
+import type { GeoJSONSource, Map as MapInstance } from "maplibre-gl";
 import { bbox, centroid } from "@turf/turf";
 import {
   Compass,
@@ -99,6 +97,9 @@ export default function StormMap({
     if (!container.current) return;
     let map: MapInstance;
     try {
+      maplibregl.setWorkerUrl(
+        `/vendor/maplibre-gl-worker.mjs?v=${maplibregl.getVersion()}`,
+      );
       map = new maplibregl.Map({
         container: container.current,
         center: [-98, 32],

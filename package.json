@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/prepare-map-worker.mjs",
     "dev": "next dev --hostname 0.0.0.0",
+    "prebuild": "node scripts/prepare-map-worker.mjs",
     "build": "next build --webpack",
     "start": "next start --hostname 0.0.0.0",
     "typecheck": "tsc --noEmit",
@@ -15,7 +17,7 @@
     "@fontsource-variable/inter": "^5.3.0",
     "@turf/turf": "^7.3.0",
     "lucide-react": "^0.468.0",
-    "maplibre-gl": "^5.6.2",
+    "maplibre-gl": "^6.13.0",
     "next": "16.4.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -33,7 +35,7 @@
     "topojson-client": "^3.1.0",
     "typescript": "^5.9.0",
     "us-atlas": "^3.0.1",
-    "vitest": "^3.2.0",
+    "vitest": "^4.1.11",
     "world-atlas": "^2.0.2"
   }
 }

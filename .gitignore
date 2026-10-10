@@ -9,3 +9,4 @@ test-results/
 !.env.example
 .stormgrid-cache/
 *.log
+public/vendor/maplibre-gl-worker.mjs

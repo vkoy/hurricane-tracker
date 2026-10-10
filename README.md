@@ -42,6 +42,36 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm run test:e2e
 
 Unit tests cover area intersections, double-counting, missing-data normalization, storm isolation, cone-only rejection, weight validation, provider schemas, NHC timestamps and last-success caching. Playwright covers desktop/mobile rendering, independent layer switches, no-active-storm behavior, calculated rankings, selection, filters and dialogs. Synthetic fixtures are confined to intercepted automated tests and are never served by application routes.
 
+## Deploy on Render
+
+Create a Node web service connected to this repository's `main` branch. Use:
+
+- Build command: `npm ci --include=dev && npm run build`
+- Start command: `npm start`
+- Health check: `/api/health`
+- Environment: `NODE_VERSION=24.19.0`, `NODE_ENV=production`
+- Persistent disk mount: `/var/data`
+- Cache setting: `STORMGRID_CACHE_DIR=/var/data/stormgrid-cache`
+
+Choose a service plan supporting persistent disks and start with one instance.
+Render supplies `PORT`; the start command binds to all network interfaces.
+No database or API keys are required for the default sources. Keep the committed
+`data/` and `public/` directories in the deployment.
+The `prebuild` and `predev` scripts copy the installed MapLibre worker into
+`public/vendor/`; it is served locally and requires no external CDN.
+
+Builds require development dependencies, including TypeScript and Tailwind.
+The committed `.npmrc` includes them even with `NODE_ENV=production`; the explicit
+build flag above also documents this requirement. Omitting them can produce
+`Can't resolve '@/components/dashboard'` or `@/lib/server/dashboard` errors even
+though those source files exist. For a failed deployment, update the build command
+and deploy the latest commit again.
+
+After deployment, check the public page, `/api/health`, and **Data connections**.
+NOAA requires outbound HTTPS to `www.nhc.noaa.gov` and
+`mapservices.weather.noaa.gov`. Archived utility status is expected; failed or
+stale NOAA status needs investigation even when the HTTP health check succeeds.
+
 ## Data sources and actual verification
 
 ### Official NOAA NHC forecasts
