@@ -154,6 +154,7 @@ export async function getStorms(): Promise<{
             ? "Official current storm positions retrieved."
             : "NHC reports no active tropical cyclones in its monitored basins.",
     });
+    if (result.warning) source.message += ` ${result.warning}`;
     return { storms: result.data, source };
   } catch (e) {
     source.message = message(e);
@@ -449,6 +450,7 @@ export async function getGeometry(
         ? "Last successful geometry snapshot; refresh failed."
         : `${result.data.cones.features.length} forecast cones; ${result.data.wind.features.length} official forecast wind polygons.${missing.length ? ` Partial coverage: no GIS positions for ${missing.map((s) => s.name).join(", ")}.` : ""} Missing hazard layers are not inferred from the cone.`,
     });
+    if (result.warning) source.message += ` ${result.warning}`;
     return { geometry: result.data, source };
   } catch (e) {
     source.message = message(e);
@@ -619,6 +621,7 @@ export async function getUtilities(): Promise<{
         ? "Last successful territory snapshot; refresh failed."
         : `${result.data.length.toLocaleString()} territories loaded from the configured provider. Coverage is limited to this source.`,
     });
+    if (result.warning) source.message += ` ${result.warning}`;
     return {
       utilities: { type: "FeatureCollection", features: result.data },
       source,

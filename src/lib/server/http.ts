@@ -6,6 +6,10 @@ import path from "node:path";
 const dispatcher = new EnvHttpProxyAgent();
 const MAX_BYTES = 24 * 1024 * 1024;
 const requests = new Map<string, Promise<unknown>>();
+// Disk persistence is optional: a storage failure must not discard a valid feed.
+const memory = new Map<string, Cached<unknown>>();
+const CACHE_WARNING =
+  "Persistent cache unavailable; using memory until restart. Check STORMGRID_CACHE_DIR and the disk mount.";
 const cacheDir = () =>
   process.env.STORMGRID_CACHE_DIR ||
   path.join(process.cwd(), ".stormgrid-cache");
@@ -54,47 +58,60 @@ export async function cached<T>(
   ttlMs: number,
   load: () => Promise<T>,
 ): Promise<Cached<T>> {
-  const existing = requests.get(key);
-  if (existing) return existing as Promise<Cached<T>>;
+  const directory = cacheDir();
+  const file = path.join(
+    directory,
+    createHash("sha256").update(key).digest("hex") + ".json",
+  );
+  const existing = requests.get(file);
+  if (existing) return structuredClone(await existing) as Cached<T>;
   const task = (async () => {
-    const file = path.join(
-      cacheDir(),
-      createHash("sha256").update(key).digest("hex") + ".json",
-    );
-    let saved: Cached<T> | null = null;
-    try {
-      saved = JSON.parse(await readFile(file, "utf8"));
-    } catch {
-      /* no saved success */
+    let saved = (memory.get(file) as Cached<T> | undefined) ?? null;
+    if (!saved) {
+      try {
+        saved = JSON.parse(await readFile(file, "utf8"));
+      } catch {
+        /* no saved success */
+      }
     }
     if (saved && Date.now() - Date.parse(saved.fetchedAt) < ttlMs)
       return { ...saved, stale: false };
+    let result: Cached<T>;
     try {
-      const result = {
+      result = {
         data: await load(),
         fetchedAt: new Date().toISOString(),
         stale: false,
       };
-      await mkdir(cacheDir(), { recursive: true });
-      const temporary = file + "." + process.pid + ".tmp";
-      await writeFile(temporary, JSON.stringify(result));
-      await rename(temporary, file);
-      return result;
     } catch (error) {
       if (saved)
         return {
           ...saved,
           stale: true,
-          warning:
-            error instanceof Error ? error.message : "Provider unavailable.",
+          warning: saved.warning,
         };
       throw error;
     }
+    try {
+      await mkdir(directory, { recursive: true });
+      const temporary = file + "." + process.pid + ".tmp";
+      await writeFile(temporary, JSON.stringify(result));
+      await rename(temporary, file);
+    } catch {
+      result.warning = CACHE_WARNING;
+      if (saved?.warning !== CACHE_WARNING)
+        console.warn(`[StormGrid] ${CACHE_WARNING}`);
+    }
+    memory.delete(file);
+    memory.set(file, result);
+    // Bound memory across successive advisories and provider configuration changes.
+    while (memory.size > 8) memory.delete(memory.keys().next().value!);
+    return result;
   })();
-  requests.set(key, task);
+  requests.set(file, task);
   try {
-    return await task;
+    return structuredClone(await task);
   } finally {
-    requests.delete(key);
+    requests.delete(file);
   }
 }

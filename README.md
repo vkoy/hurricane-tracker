@@ -72,6 +72,14 @@ NOAA requires outbound HTTPS to `www.nhc.noaa.gov` and
 `mapservices.weather.noaa.gov`. Archived utility status is expected; failed or
 stale NOAA status needs investigation even when the HTTP health check succeeds.
 
+If you have not attached a persistent disk, leave `STORMGRID_CACHE_DIR` unset;
+setting the variable does not create or attach a disk. The default local cache
+is lost when the host replaces the instance. If the configured directory is not
+writable, successful feeds still load using a bounded in-memory cache. **Data
+connections** and server logs show a persistent-cache warning; last-success
+fallback then lasts only until restart. Attach the disk or correct the writable
+cache path to restore persistence.
+
 ## Data sources and actual verification
 
 ### Official NOAA NHC forecasts
