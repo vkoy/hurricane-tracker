@@ -51,6 +51,7 @@ import {
 } from "@/lib/types";
 import { DEFAULT_WEIGHTS, FACTOR_LABELS } from "@/lib/scoring";
 import { utilityAssessment } from "@/lib/selection";
+import { clientView } from "@/lib/clients";
 
 const StormMap = dynamic(() => import("./storm-map"), {
   ssr: false,
@@ -121,6 +122,7 @@ export default function Dashboard() {
   const [stormId, setStormId] = useState("");
   const [stormSearch, setStormSearch] = useState("");
   const [utilitySearch, setUtilitySearch] = useState("");
+  const [clientFilter, setClientFilter] = useState("");
   const [selectedUtility, setSelectedUtility] = useState<string | null>(null);
   const [stateFilter, setStateFilter] = useState("");
   const [riskFilter, setRiskFilter] = useState("");
@@ -224,14 +226,21 @@ export default function Dashboard() {
   const sourcesHealthy =
     !!data && data.sources.every((s) => s.state === "live") && !apiError;
   const selectedStorm = data?.storms.find((s) => s.id === stormId);
+  const portfolioData = useMemo(
+    () => clientView(data, clientFilter),
+    [data, clientFilter],
+  );
+  const selectedClient = data?.clients?.find((c) => c.id === clientFilter);
   const assessments = useMemo(
     () =>
-      data?.assessments.filter((a) => !stormId || a.stormId === stormId) ?? [],
-    [data, stormId],
+      portfolioData?.assessments.filter(
+        (a) => !stormId || a.stormId === stormId,
+      ) ?? [],
+    [portfolioData, stormId],
   );
   const utilityRows = useMemo(
     () =>
-      (data?.utilities.features ?? [])
+      (portfolioData?.utilities.features ?? [])
         .map((utility) => ({
           utility,
           assessment: data
@@ -243,7 +252,7 @@ export default function Dashboard() {
           const query = utilitySearch.toLowerCase();
           return (
             (!query ||
-              `${p.name} ${p.state} ${p.type} ${p.city ?? ""}`
+              `${p.name} ${p.state} ${p.type} ${p.city ?? ""} ${p.clientNames?.join(" ") ?? ""} ${p.clientAliases?.join(" ") ?? ""}`
                 .toLowerCase()
                 .includes(query)) &&
             (!stateFilter || p.state === stateFilter) &&
@@ -267,6 +276,7 @@ export default function Dashboard() {
         }),
     [
       data,
+      portfolioData,
       assessments,
       utilitySearch,
       stateFilter,
@@ -475,7 +485,11 @@ export default function Dashboard() {
         />
         <Metric
           icon={<Building2 size={18} />}
-          title="UTILITIES AT HIGHER EXPOSURE"
+          title={
+            data?.clients
+              ? "CLIENT TERRITORIES AT HIGHER EXPOSURE"
+              : "UTILITIES AT HIGHER EXPOSURE"
+          }
           value={assessed.length ? fmt(atRiskCount) : "—"}
           label={
             assessed.length
@@ -797,7 +811,7 @@ export default function Dashboard() {
 
         <section className="map-panel" aria-label="Live operational map">
           <StormMap
-            data={data}
+            data={portfolioData}
             layers={layers}
             stormId={stormId}
             selectedUtility={selectedUtility}
@@ -946,6 +960,49 @@ export default function Dashboard() {
             </button>
             <span className="intelligence-badge">EXPOSURE MODEL</span>
           </div>
+          {!!data?.clients?.length && (
+            <div className="client-scope">
+              <label htmlFor="client-filter">CLIENT PORTFOLIO</label>
+              <select
+                id="client-filter"
+                aria-label="Select client"
+                value={clientFilter}
+                onChange={(e) => {
+                  setClientFilter(e.target.value);
+                  setSelectedUtility(null);
+                  setUtilitySearch("");
+                  setStateFilter("");
+                  setRiskFilter("");
+                  setTypeFilter("");
+                  setVisibleCount(30);
+                }}
+              >
+                <option value="">All {data.clients.length} clients</option>
+                {data.clients.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                    {c.status === "unavailable"
+                      ? " — boundary unavailable"
+                      : c.status === "partial"
+                        ? " — partial coverage"
+                        : ""}
+                  </option>
+                ))}
+              </select>
+              <p>
+                {selectedClient
+                  ? `${selectedClient.territoryIds.length} mapped operating-company territories`
+                  : `${data.clients.filter((c) => c.territoryIds.length).length} clients mapped · ${data.clients.filter((c) => !c.territoryIds.length).length} awaiting boundaries`}
+              </p>
+              {selectedClient?.notes && <p>{selectedClient.notes}</p>}
+              <button
+                className="text-button"
+                onClick={() => setModal("sources")}
+              >
+                Review client coverage <ChevronRight size={12} />
+              </button>
+            </div>
+          )}
           {selected ? (
             <UtilityDetails
               utility={selected}
@@ -967,7 +1024,11 @@ export default function Dashboard() {
                       <br />
                       electric utilities
                     </h2>
-                    <p>Ranked by forecast hazard exposure</p>
+                    <p>
+                      {data?.clients
+                        ? "Client territories · scored by operating company"
+                        : "Ranked by forecast hazard exposure"}
+                    </p>
                   </div>
                 </div>
                 <div className="ranking-coverage-note">
@@ -1003,7 +1064,11 @@ export default function Dashboard() {
                     <Search size={13} />
                     <input
                       aria-label="Search utility or state"
-                      placeholder="Search utility, state or city…"
+                      placeholder={
+                        data?.clients
+                          ? "Search client, alias or territory…"
+                          : "Search utility, state or city…"
+                      }
                       value={utilitySearch}
                       onChange={(e) => setUtilitySearch(e.target.value)}
                     />
@@ -1084,7 +1149,8 @@ export default function Dashboard() {
                 )}
                 <div className="sort-row">
                   <span>
-                    {utilityRows.length} utilities{" "}
+                    {utilityRows.length}{" "}
+                    {data?.clients ? "client territories" : "utilities"}{" "}
                     {data?.utilities.features.length ? "in view" : "assessed"}
                   </span>
                   <label>
@@ -1127,6 +1193,11 @@ export default function Dashboard() {
                             </span>
                             <div>
                               <strong>{u.properties.name}</strong>
+                              {!!u.properties.clientNames?.length && (
+                                <span className="client-tag">
+                                  {u.properties.clientNames.join(" · ")}
+                                </span>
+                              )}
                               <span>
                                 {u.properties.state} · {u.properties.type}
                               </span>
@@ -1198,14 +1269,19 @@ export default function Dashboard() {
                       NO VERIFIED EXPOSURE RESULTS
                     </span>
                     <h3>
-                      {data?.utilities.features.length
-                        ? "No utilities match these filters"
-                        : "Intelligence starts with reliable data."}
+                      {selectedClient?.status === "unavailable"
+                        ? "Client boundary unavailable"
+                        : data?.utilities.features.length
+                          ? "No utilities match these filters"
+                          : "Intelligence starts with reliable data."}
                     </h3>
                     <p>
-                      {data?.utilities.features.length
-                        ? "Try a different state, utility name, or risk classification."
-                        : "Connect verified utility boundaries and official forecast hazards to see a defensible exposure ranking."}
+                      {selectedClient?.status === "unavailable"
+                        ? selectedClient.notes ||
+                          "No verified source record is connected for this client. No exposure score can be calculated."
+                        : data?.utilities.features.length
+                          ? "Try a different state, utility name, or risk classification."
+                          : "Connect verified utility boundaries and official forecast hazards to see a defensible exposure ranking."}
                     </p>
                     <button
                       className="primary-button"
@@ -1214,7 +1290,8 @@ export default function Dashboard() {
                           ? (setStateFilter(""),
                             setRiskFilter(""),
                             setTypeFilter(""),
-                            setUtilitySearch(""))
+                            setUtilitySearch(""),
+                            setClientFilter(""))
                           : setModal("sources")
                       }
                     >
@@ -1499,6 +1576,9 @@ function UtilityDetails({
         </div>
       </div>
       <DetailSection title="Company overview">
+        {!!p.clientNames?.length && (
+          <DetailRow label="Client" value={p.clientNames.join(" · ")} />
+        )}
         <DetailRow label="Entity state (source)" value={p.state} />
         <DetailRow label="Utility type" value={p.type} />
         <DetailRow label="Total customers" value={fmt(p.customers)} />
@@ -1696,7 +1776,40 @@ function SourcesPanel({
           risk.
         </p>
       </div>
-      {data?.utilityCoverage && (
+      {!!data?.clients?.length && (
+        <article className="source-card">
+          <h3>Client portfolio coverage</h3>
+          <p>
+            <strong>{data.clients.length} clients</strong> ·{" "}
+            {data.clients.filter((c) => c.territoryIds.length).length} have
+            matched archived boundaries. Only these clients appear on the map,
+            in rankings, and in exported operational data.
+          </p>
+          <p>
+            Parent groups are displayed as individual operating-company
+            territories, not a combined corporate exposure score. An archive
+            match does not establish current ownership or complete group
+            coverage.
+          </p>
+          <ul className="client-directory">
+            {data.clients.map((c) => (
+              <li key={c.id}>
+                <strong>{c.name}</strong>
+                <span>
+                  {c.status === "unavailable"
+                    ? "Boundary unavailable"
+                    : `${c.territoryIds.length} mapped ${c.territoryIds.length === 1 ? "territory" : "territories"}${c.status === "partial" ? " · partial" : ""}`}
+                </span>
+                {c.notes && <p>{c.notes}</p>}
+                {!!c.missingRecords.length && (
+                  <p>Missing source records: {c.missingRecords.join(", ")}</p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </article>
+      )}
+      {data?.utilityCoverage && !data.clients && (
         <article className="source-card">
           <h3>Utility boundary coverage</h3>
           <p>

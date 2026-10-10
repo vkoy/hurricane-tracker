@@ -1,6 +1,7 @@
 import { assessUtility, DEFAULT_WEIGHTS, validateWeights } from "../scoring";
 import type { DashboardData } from "../types";
 import { getGeometry, getStorms, getUtilities } from "./providers";
+import { scopeUtilitiesToClients } from "../clients";
 
 export async function getDashboard(): Promise<DashboardData> {
   const weights = process.env.EXPOSURE_WEIGHTS
@@ -8,8 +9,14 @@ export async function getDashboard(): Promise<DashboardData> {
     : DEFAULT_WEIGHTS;
   const [
     { storms, source: current },
-    { utilities, source: utilitySource, coverage },
+    { utilities: allUtilities, source: originalUtilitySource },
   ] = await Promise.all([getStorms(), getUtilities()]);
+  const { utilities, clients } = scopeUtilitiesToClients(allUtilities);
+  const mapped = clients.filter((c) => c.territoryIds.length).length;
+  const utilitySource = {
+    ...originalUtilitySource,
+    message: `Client portfolio: ${utilities.features.length} operating-company territories for ${mapped} of ${clients.length} clients. Unmatched clients remain unavailable; all other utilities are excluded from this dashboard. Source archive/provider context: ${originalUtilitySource.message}`,
+  };
   const { geometry, source: gis } = await getGeometry(storms, current.state);
   for (const storm of storms) {
     const points = geometry.points.features
@@ -55,7 +62,7 @@ export async function getDashboard(): Promise<DashboardData> {
     sources: [current, gis, utilitySource],
     fetchedAt: new Date().toISOString(),
     weights,
-    utilityCoverage: coverage,
+    clients,
     forecastTimes: [
       ...new Set(
         geometry.points.features.flatMap((p) =>

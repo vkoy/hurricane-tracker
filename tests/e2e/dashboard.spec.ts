@@ -93,7 +93,9 @@ test("actual application renders an interactive basemap and truthful provider st
   await expect(
     page.getByRole("heading", { name: "Storm intelligence", exact: false }),
   ).toBeVisible();
-  await expect(page.locator(".maplibregl-canvas")).toBeVisible({ timeout: 15000 });
+  await expect(page.locator(".maplibregl-canvas")).toBeVisible({
+    timeout: 15000,
+  });
   await expect(page.locator(".map-loading")).toHaveCount(0, { timeout: 30000 });
   await expect(page.getByText("Checking official advisories")).toHaveCount(0, {
     timeout: 35000,
@@ -302,4 +304,76 @@ test("failed external basemap falls back explicitly and coverage gaps are inspec
   await expect(
     page.getByRole("link", { name: "View deployment health report" }),
   ).toHaveAttribute("href", "/api/health/data");
+});
+
+test("client selection filters the map and rankings and leaves missing boundaries unscored", async ({
+  page,
+}, testInfo) => {
+  const mapped = {
+    ...utility,
+    properties: {
+      ...utility.properties,
+      clientIds: ["test-client"],
+      clientNames: ["Synthetic mapped client"],
+      clientAliases: ["TESTALIAS"],
+    },
+  };
+  await page.route("**/api/dashboard", (route) =>
+    route.fulfill({
+      json: {
+        ...quiet,
+        utilities: { type: "FeatureCollection", features: [mapped] },
+        clients: [
+          {
+            id: "test-client",
+            name: "Synthetic mapped client",
+            aliases: ["TESTALIAS"],
+            notes: "Test only",
+            status: "mapped",
+            territoryIds: [utility.properties.id],
+            missingRecords: [],
+          },
+          {
+            id: "test-canada",
+            name: "Synthetic Canadian client",
+            aliases: [],
+            notes: "Authoritative Canadian boundaries required.",
+            status: "unavailable",
+            territoryIds: [],
+            missingRecords: [],
+          },
+        ],
+      },
+    }),
+  );
+  await page.goto("/");
+  if (testInfo.project.name === "mobile")
+    await page
+      .getByRole("button", { name: "Impact intelligence", exact: true })
+      .click();
+  await page
+    .getByRole("combobox", { name: "Select client" })
+    .selectOption("test-canada");
+  await expect(
+    page.getByText("Client boundary unavailable", { exact: true }),
+  ).toBeVisible();
+  await expect(page.getByTestId("map-shell")).toHaveAttribute(
+    "data-utility-count",
+    "0",
+  );
+  await page
+    .getByRole("combobox", { name: "Select client" })
+    .selectOption("test-client");
+  await expect(page.getByTestId("map-shell")).toHaveAttribute(
+    "data-utility-count",
+    "1",
+  );
+  await page
+    .getByRole("textbox", { name: "Search utility or state" })
+    .fill("TESTALIAS");
+  await page.getByRole("button", { name: /Synthetic test utility/ }).click();
+  await expect(
+    page.getByRole("heading", { name: "Synthetic test utility", exact: true }),
+  ).toBeVisible();
+  await expect(page.getByText("Client", { exact: true })).toBeVisible();
 });

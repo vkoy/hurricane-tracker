@@ -9,7 +9,11 @@ export async function GET(request: Request) {
       '"' +
       createHash("sha256")
         .update(
-          JSON.stringify({ sources: data.sources, weights: data.weights }),
+          JSON.stringify({
+            sources: data.sources,
+            weights: data.weights,
+            clients: data.clients,
+          }),
         )
         .digest("hex") +
       '"';

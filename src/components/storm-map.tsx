@@ -344,7 +344,7 @@ export default function StormMap({
           popup
             .setLngLat(e.lngLat)
             .setText(
-              `${p.name}${p.score !== null && p.score !== undefined ? ` · Exposure ${p.score}/100` : " · Not assessed"}`,
+              `${p.clientLabel ? `${p.clientLabel} · ` : ""}${p.name}${p.score !== null && p.score !== undefined ? ` · Exposure ${p.score}/100` : " · Not assessed"}`,
             )
             .addTo(map);
       });
@@ -495,6 +495,7 @@ export default function StormMap({
           ...f,
           properties: {
             ...f.properties,
+            clientLabel: f.properties.clientNames?.join(" / ") || "",
             score: assessment?.score ?? null,
             ...(assessment?.risk
               ? { riskColor: RISK_COLORS[assessment.risk] }
@@ -539,7 +540,9 @@ export default function StormMap({
         if (!map.getBounds().contains(point)) continue;
         const el = document.createElement("button");
         el.className = "utility-map-label";
-        el.textContent = utility.properties.name;
+        el.textContent =
+          utility.properties.clientNames?.join(" / ") ||
+          utility.properties.name;
         el.onclick = () => callbacks.current.onUtility(utility.properties.id);
         utilityMarkers.current.push(
           new maplibregl.Marker({ element: el }).setLngLat(point).addTo(map),
@@ -607,6 +610,7 @@ export default function StormMap({
     <div
       className="map-shell"
       data-testid="map-shell"
+      data-utility-count={data?.utilities.features.length ?? 0}
       data-map-idle={idle}
       data-features-ready={featuresReady}
     >

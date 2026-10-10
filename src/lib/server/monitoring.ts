@@ -36,6 +36,14 @@ export async function deploymentHealth() {
         status: data.utilities.features.length ? "ok" : "error",
         message: `${data.utilities.features.length.toLocaleString()} utility territories loaded. Missing coverage is not zero exposure.`,
       });
+      if (data.clients) {
+        const missing = data.clients.filter((c) => c.status !== "mapped");
+        checks.push({
+          id: "client-coverage",
+          status: missing.length ? "warning" : "ok",
+          message: `${data.clients.length - missing.length} of ${data.clients.length} clients have all configured archive records. ${missing.length ? `Incomplete or unavailable: ${missing.map((c) => c.name).join(", ")}.` : ""} Mapped archive records do not establish current or complete service coverage.`,
+        });
+      }
     } catch {
       checks.push({
         id: "dashboard",

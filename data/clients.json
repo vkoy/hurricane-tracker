@@ -1,0 +1,662 @@
+[
+  {
+    "id": "apc",
+    "name": "Alabama Power - APC",
+    "aliases": ["APC", "Alabama Power"],
+    "records": [
+      {
+        "id": "195",
+        "name": "ALABAMA POWER CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "altice",
+    "name": "Altice",
+    "aliases": ["Optimum"],
+    "records": [],
+    "notes": "Telecommunications footprint is not represented in the electric utility archive; a licensed network boundary source is required."
+  },
+  {
+    "id": "ameren",
+    "name": "Ameren",
+    "aliases": [],
+    "records": [
+      {
+        "id": "56697",
+        "name": "AMEREN ILLINOIS COMPANY"
+      },
+      {
+        "id": "19436",
+        "name": "UNION ELECTRIC CO - (MO)"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "aep",
+    "name": "American Electric Power (AEP)",
+    "aliases": ["AEP"],
+    "records": [
+      {
+        "id": "733",
+        "name": "APPALACHIAN POWER CO"
+      },
+      {
+        "id": "20404",
+        "name": "AEP TEXAS NORTH COMPANY"
+      },
+      {
+        "id": "3278",
+        "name": "AEP TEXAS CENTRAL COMPANY"
+      },
+      {
+        "id": "9324",
+        "name": "INDIANA MICHIGAN POWER CO"
+      },
+      {
+        "id": "22053",
+        "name": "KENTUCKY POWER CO"
+      },
+      {
+        "id": "10331",
+        "name": "KINGSPORT POWER CO"
+      },
+      {
+        "id": "14006",
+        "name": "OHIO POWER CO"
+      },
+      {
+        "id": "15474",
+        "name": "PUBLIC SERVICE CO OF OKLAHOMA"
+      },
+      {
+        "id": "17698",
+        "name": "SOUTHWESTERN ELECTRIC POWER CO"
+      },
+      {
+        "id": "20521",
+        "name": "WHEELING POWER CO"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "austin",
+    "name": "Austin Energy - AE",
+    "aliases": ["AE"],
+    "records": [
+      {
+        "id": "1015",
+        "name": "AUSTIN ENERGY"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "avista",
+    "name": "Avista",
+    "aliases": [],
+    "records": [
+      {
+        "id": "20169",
+        "name": "AVISTA CORP"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bge",
+    "name": "BG&E",
+    "aliases": ["BGE", "Baltimore Gas and Electric"],
+    "records": [
+      {
+        "id": "1167",
+        "name": "BALTIMORE GAS & ELECTRIC CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cenhud",
+    "name": "Central Hudson (CenHud)",
+    "aliases": ["CenHud"],
+    "records": [
+      {
+        "id": "3249",
+        "name": "CENTRAL HUDSON GAS & ELEC CORP"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cobb",
+    "name": "Cobb EMC",
+    "aliases": [],
+    "records": [
+      {
+        "id": "3916",
+        "name": "COBB ELECTRIC MEMBERSHIP CORP"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "comed",
+    "name": "ComEd",
+    "aliases": ["Commonwealth Edison"],
+    "records": [
+      {
+        "id": "4110",
+        "name": "COMMONWEALTH EDISON CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "coned",
+    "name": "ConEd",
+    "aliases": ["Con Edison"],
+    "records": [
+      {
+        "id": "4226",
+        "name": "CONSOLIDATED EDISON CO-NY INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cps",
+    "name": "CPS ENERGY",
+    "aliases": ["San Antonio"],
+    "records": [
+      {
+        "id": "16604",
+        "name": "CITY OF SAN ANTONIO - (TX)"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "csu",
+    "name": "CSU",
+    "aliases": ["Colorado Springs Utilities"],
+    "records": [
+      {
+        "id": "3989",
+        "name": "CITY OF COLORADO SPRINGS - (CO)"
+      }
+    ],
+    "notes": "CSU is interpreted as Colorado Springs Utilities."
+  },
+  {
+    "id": "dominion",
+    "name": "Dominion",
+    "aliases": ["Dominion Virginia"],
+    "records": [
+      {
+        "id": "19876",
+        "name": "VIRGINIA ELECTRIC & POWER CO"
+      }
+    ],
+    "notes": "Virginia Electric & Power archive territory. DESC is a separate client. No other Dominion businesses are inferred."
+  },
+  {
+    "id": "desc",
+    "name": "Dominion Energy South Carolina (DESC)",
+    "aliases": ["DESC"],
+    "records": [
+      {
+        "id": "17539",
+        "name": "DOMINION ENERGY SOUTH CAROLINA, INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "dte",
+    "name": "DTE",
+    "aliases": [],
+    "records": [
+      {
+        "id": "5109",
+        "name": "DTE ELECTRIC COMPANY"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "versant",
+    "name": "Emera Maine (Versant Power)",
+    "aliases": ["Versant", "Emera Maine"],
+    "records": [
+      {
+        "id": "1179",
+        "name": "VERSANT POWER"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "evergy",
+    "name": "Evergy",
+    "aliases": [],
+    "records": [
+      {
+        "id": "10005",
+        "name": "EVERGY KANSAS SOUTH, INC"
+      },
+      {
+        "id": "12698",
+        "name": "EVERGY MISSOURI WEST"
+      },
+      {
+        "id": "22500",
+        "name": "EVERGY KANSAS CENTRAL, INC"
+      },
+      {
+        "id": "10000",
+        "name": "EVERGY METRO"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "eversource",
+    "name": "Eversource",
+    "aliases": [],
+    "records": [
+      {
+        "id": "54913",
+        "name": "NSTAR ELECTRIC COMPANY"
+      },
+      {
+        "id": "4176",
+        "name": "CONNECTICUT LIGHT & POWER CO"
+      },
+      {
+        "id": "15472",
+        "name": "PUBLIC SERVICE CO OF NH"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "fayetteville",
+    "name": "Fayetteville PWC",
+    "aliases": ["PWC"],
+    "records": [
+      {
+        "id": "6235",
+        "name": "FAYETTEVILLE PUBLIC WORKS COMMISSION"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "firstenergy",
+    "name": "FirstEnergy",
+    "aliases": [],
+    "records": [
+      {
+        "id": "3755",
+        "name": "CLEVELAND ELECTRIC ILLUM CO"
+      },
+      {
+        "id": "12390",
+        "name": "METROPOLITAN EDISON CO"
+      },
+      {
+        "id": "9726",
+        "name": "JERSEY CENTRAL POWER & LT CO"
+      },
+      {
+        "id": "12796",
+        "name": "MONONGAHELA POWER CO"
+      },
+      {
+        "id": "13998",
+        "name": "OHIO EDISON CO"
+      },
+      {
+        "id": "14711",
+        "name": "PENNSYLVANIA ELECTRIC CO"
+      },
+      {
+        "id": "14716",
+        "name": "PENNSYLVANIA POWER CO"
+      },
+      {
+        "id": "15263",
+        "name": "THE POTOMAC EDISON COMPANY"
+      },
+      {
+        "id": "18997",
+        "name": "THE TOLEDO EDISON CO"
+      },
+      {
+        "id": "20387",
+        "name": "WEST PENN POWER COMPANY"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "gpc",
+    "name": "Georgia Power (GPC)",
+    "aliases": ["GPC"],
+    "records": [
+      {
+        "id": "7140",
+        "name": "GEORGIA POWER CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hydro-one",
+    "name": "Hydro One",
+    "aliases": [],
+    "records": [],
+    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+  },
+  {
+    "id": "hydro-ottawa",
+    "name": "Hydro Ottawa",
+    "aliases": [],
+    "records": [],
+    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+  },
+  {
+    "id": "jea",
+    "name": "JEA",
+    "aliases": [],
+    "records": [
+      {
+        "id": "9617",
+        "name": "JEA"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lakeland",
+    "name": "Lakeland",
+    "aliases": ["Lakeland Electric"],
+    "records": [
+      {
+        "id": "10623",
+        "name": "CITY OF LAKELAND - (FL)"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "lge-ku",
+    "name": "LG&E and KU",
+    "aliases": [
+      "LGE",
+      "KU",
+      "Louisville Gas and Electric",
+      "Kentucky Utilities"
+    ],
+    "records": [
+      {
+        "id": "11249",
+        "name": "LOUISVILLE GAS & ELECTRIC CO"
+      },
+      {
+        "id": "10171",
+        "name": "KENTUCKY UTILITIES CO"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "mpc",
+    "name": "Mississippi Power (MPC)",
+    "aliases": ["MPC"],
+    "records": [
+      {
+        "id": "12686",
+        "name": "MISSISSIPPI POWER CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "national-grid",
+    "name": "National Grid",
+    "aliases": [],
+    "records": [
+      {
+        "id": "13206",
+        "name": "NANTUCKET ELECTRIC CO"
+      },
+      {
+        "id": "11804",
+        "name": "MASSACHUSETTS ELECTRIC CO"
+      },
+      {
+        "id": "13573",
+        "name": "NIAGARA MOHAWK POWER CORP."
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage. Narragansett/Rhode Island Energy is excluded; it is not assigned to National Grid."
+  },
+  {
+    "id": "nsp",
+    "name": "Nova Scotia Power (NSP)",
+    "aliases": ["NSP"],
+    "records": [],
+    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+  },
+  {
+    "id": "oge",
+    "name": "Oklahoma Gas and Electric (OGE)",
+    "aliases": ["OGE", "OG&E"],
+    "records": [
+      {
+        "id": "14063",
+        "name": "OKLAHOMA GAS & ELECTRIC CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "oncor",
+    "name": "Oncor",
+    "aliases": [],
+    "records": [
+      {
+        "id": "44372",
+        "name": "ONCOR ELECTRIC DELIVERY COMPANY LLC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "oru",
+    "name": "Orange & Rockland (ORU)",
+    "aliases": ["ORU"],
+    "records": [
+      {
+        "id": "14154",
+        "name": "ORANGE & ROCKLAND UTILS INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ouc",
+    "name": "OUC",
+    "aliases": ["Orlando Utilities Commission"],
+    "records": [
+      {
+        "id": "14610",
+        "name": "ORLANDO UTILITIES COMM"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "peco",
+    "name": "PECO",
+    "aliases": [],
+    "records": [
+      {
+        "id": "14940",
+        "name": "PECO ENERGY CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pec",
+    "name": "Pedernales Electric Cooperative (PEC)",
+    "aliases": ["PEC"],
+    "records": [
+      {
+        "id": "14626",
+        "name": "PEDERNALES ELECTRIC COOP, INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "phi",
+    "name": "PHI (Pepco, ACE, and Delmarva)",
+    "aliases": ["PHI", "Pepco", "ACE", "Delmarva"],
+    "records": [
+      {
+        "id": "15270",
+        "name": "POTOMAC ELECTRIC POWER CO"
+      },
+      {
+        "id": "963",
+        "name": "ATLANTIC CITY ELECTRIC CO"
+      },
+      {
+        "id": "5027",
+        "name": "DELMARVA POWER"
+      }
+    ],
+    "notes": "Shown as archived operating-company territories, each scored separately. This mapping does not establish current corporate ownership or complete group coverage."
+  },
+  {
+    "id": "pseg",
+    "name": "PSEG",
+    "aliases": ["PSE&G"],
+    "records": [
+      {
+        "id": "15477",
+        "name": "PUBLIC SERVICE ELEC & GAS CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "psegli",
+    "name": "PSEGLI",
+    "aliases": ["PSEG Long Island", "PSEGLI - Muni portal", "Muni portal"],
+    "records": [
+      {
+        "id": "11171",
+        "name": "LONG ISLAND POWER AUTHORITY"
+      }
+    ],
+    "notes": "Uses the archived Long Island Power Authority territory as the PSEGLI service footprint. The muni portal is included in this single client entry, not a separate territory."
+  },
+  {
+    "id": "pnm",
+    "name": "Public Service Company of New Mexico (PNM)",
+    "aliases": ["PNM"],
+    "records": [
+      {
+        "id": "15473",
+        "name": "PUBLIC SERVICE CO OF NM"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "rec",
+    "name": "REC (Rappahannock Electric Cooperative)",
+    "aliases": ["REC"],
+    "records": [
+      {
+        "id": "40228",
+        "name": "RAPPAHANNOCK ELECTRIC COOP"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "santee",
+    "name": "Santee Cooper",
+    "aliases": [],
+    "records": [
+      {
+        "id": "17543",
+        "name": "SOUTH CAROLINA PUBLIC SERVICE AUTHORITY"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "sdge",
+    "name": "SDGE",
+    "aliases": ["SDG&E", "San Diego Gas and Electric"],
+    "records": [
+      {
+        "id": "16609",
+        "name": "SAN DIEGO GAS & ELECTRIC CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "seco",
+    "name": "SECO",
+    "aliases": ["SECO Energy"],
+    "records": [
+      {
+        "id": "18304",
+        "name": "SUMTER ELECTRIC COOP, INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "smeco",
+    "name": "SMECO",
+    "aliases": ["Southern Maryland Electric Cooperative"],
+    "records": [
+      {
+        "id": "17637",
+        "name": "SOUTHERN MARYLAND ELEC COOP INC"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tnmp",
+    "name": "TNMP (Texas New Mexico Power)",
+    "aliases": ["TNMP"],
+    "records": [
+      {
+        "id": "40051",
+        "name": "TEXAS-NEW MEXICO POWER CO"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "toronto",
+    "name": "Toronto Hydro",
+    "aliases": [],
+    "records": [],
+    "notes": "Canadian service territory is not represented in the connected archive; an authoritative permitted Canadian boundary source is required."
+  }
+]

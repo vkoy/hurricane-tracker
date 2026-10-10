@@ -77,6 +77,18 @@ export interface UtilityProperties {
   customerYear?: string | null;
   boundarySource?: string;
   geometryProcessing?: string;
+  clientIds?: string[];
+  clientNames?: string[];
+  clientAliases?: string[];
+}
+export interface ClientStatus {
+  id: string;
+  name: string;
+  aliases: string[];
+  notes: string;
+  status: "mapped" | "partial" | "unavailable";
+  territoryIds: string[];
+  missingRecords: string[];
 }
 export interface UtilityCoverage {
   sourceRecordCount: number;
@@ -134,6 +146,7 @@ export interface DashboardData {
   forecastTimes: string[];
   weights: Weights;
   utilityCoverage?: UtilityCoverage;
+  clients?: ClientStatus[];
 }
 export const emptyCollection = <
   G extends import("geojson").Geometry,
