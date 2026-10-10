@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
 import { assessUtility, DEFAULT_WEIGHTS } from "../../src/lib/scoring";
 import type {
   DashboardData,
@@ -6,6 +7,12 @@ import type {
   UtilityFeature,
 } from "../../src/lib/types";
 const empty = { type: "FeatureCollection" as const, features: [] };
+// External map availability is checked explicitly below; other tests use the offline fallback.
+test.beforeEach(async ({ page }) => {
+  await page.route("https://tiles.openfreemap.org/**", (route) =>
+    route.abort(),
+  );
+});
 const source = {
   id: "nhc-current",
   name: "NHC · active cyclones",
@@ -86,7 +93,7 @@ test("actual application renders an interactive basemap and truthful provider st
   await expect(
     page.getByRole("heading", { name: "Storm intelligence", exact: false }),
   ).toBeVisible();
-  await expect(page.locator(".maplibregl-canvas")).toBeVisible();
+  await expect(page.locator(".maplibregl-canvas")).toBeVisible({ timeout: 15000 });
   await expect(page.locator(".map-loading")).toHaveCount(0, { timeout: 30000 });
   await expect(page.getByText("Checking official advisories")).toHaveCount(0, {
     timeout: 35000,
@@ -215,4 +222,84 @@ test("methodology and source dialogs are keyboard dismissible", async ({
   ).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
+});
+
+test("street tiles render and the basemap can switch without losing the operational map", async ({
+  page,
+}) => {
+  await page.route("**/api/dashboard", (route) =>
+    route.fulfill({ json: quiet }),
+  );
+  await page.route("https://tiles.openfreemap.org/planet", (route) =>
+    route.fulfill({
+      json: {
+        tilejson: "3.0.0",
+        tiles: ["https://tiles.openfreemap.org/test/{z}/{x}/{y}.pbf"],
+        minzoom: 0,
+        maxzoom: 14,
+      },
+    }),
+  );
+  let tilesRequested = 0;
+  const tile = readFileSync("tests/fixtures/synthetic-road.pbf");
+  await page.route("https://tiles.openfreemap.org/test/**", (route) => {
+    tilesRequested++;
+    return route.fulfill({ contentType: "application/x-protobuf", body: tile });
+  });
+  await page.goto("/");
+  await expect(
+    page.getByText("Streets & places", { exact: true }),
+  ).toBeVisible();
+  for (let i = 0; i < 4; i++)
+    await page.getByRole("button", { name: "Zoom in", exact: true }).click();
+  await expect.poll(() => tilesRequested).toBeGreaterThan(0);
+  await expect(page.getByTestId("map-shell")).toHaveAttribute(
+    "data-map-idle",
+    "true",
+    { timeout: 15000 },
+  );
+  await page.getByRole("button", { name: "Change basemap" }).click();
+  await expect(page.getByText("Offline map", { exact: true })).toBeVisible();
+  await expect(page.locator(".maplibregl-canvas")).toBeVisible();
+});
+
+test("failed external basemap falls back explicitly and coverage gaps are inspectable", async ({
+  page,
+}) => {
+  await page.route("**/api/dashboard", (route) =>
+    route.fulfill({
+      json: {
+        ...quiet,
+        utilityCoverage: {
+          sourceRecordCount: 3,
+          includedCount: 2,
+          normalizedCount: 1,
+          excluded: [
+            {
+              id: "fixture-gap",
+              name: "Synthetic excluded territory",
+              reason: "Invalid individual polygon",
+            },
+          ],
+        },
+      },
+    }),
+  );
+  await page.goto("/");
+  await expect(
+    page.getByText("Streets unavailable · offline map", { exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Sources & attribution" }).click();
+  await expect(
+    page.getByText("Utility boundary coverage", { exact: true }),
+  ).toBeVisible();
+  await page
+    .getByText("1 excluded territories · view coverage gaps", { exact: true })
+    .click();
+  await expect(
+    page.getByText("Synthetic excluded territory", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "View deployment health report" }),
+  ).toHaveAttribute("href", "/api/health/data");
 });

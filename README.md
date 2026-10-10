@@ -107,9 +107,9 @@ The default national layer is a **dated public-domain HIFLD archive**, attribute
 
 Metadata states **public-domain information / public use**, publication September 30, 2024, source dates September 2015–August 2023. The host archived the layer August 21, 2025 and says it will not update it. The application labels it **archived**, not live or current legal boundaries.
 
-The source contained 2,931 records. Ingestion retained **2,686 GEOS-validated polygons** and quarantined **245 invalid records** after higher/native-resolution retries. The exact exclusions, retrieval timestamp, license, transformations and limitations are in `data/utility-source.json`; the retained polygons are in `data/utility-territories.geojson`. Some major utilities are excluded, including Florida Power & Light, Southern California Edison and Los Angeles DWP. Their absence is **not evidence of no exposure**. The UI and source panel disclose incomplete coverage.
+The source contains 2,931 records. The reviewed snapshot includes **2,920 valid territories**, including Florida Power & Light and Southern California Edison. **234 previously excluded records** were recovered by dissolving overlapping or nested, individually valid source polygons. This preserves the geographic union of their original coverage and removes double-counting within a utility. **11 records remain excluded** because individual polygon components are invalid. The exact exclusions, source timestamps, and per-record recovery audit are in `data/utility-source.json`. Data sources lists every remaining coverage gap; absence is **not evidence of no exposure**. Record coverage is not a percentage of U.S. land or customers covered.
 
-Boundaries are generalized using GEOS topology-preserving simplification at 0.002 degrees for regional screening. Original source polygons may overlap or use county approximations. No topology repair was applied to invalid native boundaries. Thus overlap percentages and rankings are approximate; verify current utility-published boundaries before operational use.
+Boundaries are generalized using GEOS topology-preserving simplification at 0.002 degrees for regional screening. Recovery first requires every component to be valid, then verifies that the union covers every original component before simplification. No `buffer(0)`, `make_valid`, inferred territory, or repair of invalid individual polygons is used. Utility detail panels disclose normalized geometry. Boundaries may still overlap between companies, use county approximations, or be outdated. **Recovery improves usability, not the source vintage**; verify current utility-published boundaries before operational use.
 
 Each utility retains its original source date, source description, customer-data year and publisher record. `STATE` and `CITY` are **entity attributes supplied by the source**, not a spatially computed list of all served states/cities. Customer totals are historical entity totals; they are never treated as exposed customer counts.
 
@@ -119,9 +119,13 @@ The verified archive is bundled so a new checkout can display real territories w
 python -m venv /tmp/stormgrid-ingest
 /tmp/stormgrid-ingest/bin/pip install shapely==2.2.0
 /tmp/stormgrid-ingest/bin/python scripts/ingest-utility-archive.py
+/tmp/stormgrid-ingest/bin/python scripts/recover-utility-overlaps.py
+/tmp/stormgrid-ingest/bin/python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-The script checks for complete downloads, batches requests, retries invalid generalized geometries at native resolution, validates with GEOS, quarantines invalid records and writes a new manifest. Review changed coverage and source terms before accepting a refreshed snapshot. The `--reuse-downloads` option is only for the implementation session's temporary downloaded files.
+The first script checks complete downloads, retries native geometry and quarantines invalid records. The second downloads the excluded native records, performs only the constrained union described above, and retains an audit trail. Review changed coverage and source terms before accepting a refreshed snapshot. The `--reuse-downloads` option is only for temporary development downloads.
+
+Source review also rejected a Lee County layer that infers FPL territory outside LCEC coverage, and a Texas layer titled Electric Utilities with water/sewer metadata. Public availability alone is not sufficient evidence of authoritative electric-service boundaries.
 
 ### Replace the archive with a current reviewed provider
 
@@ -144,6 +148,24 @@ An override requires unique polygon IDs, names and valid WGS84 Polygon/MultiPoly
 Add the chosen provider hostname to environment networking. NOAA and ArcGIS domains were saved in the environment draft; draft saving and publication are distinct from runtime access. Verify the actual operation in **Data connections** after configuration changes.
 
 ## Refresh and performance
+
+### Deployment monitoring
+
+- `/api/health` is the cheap Render process health check. Keep this as Render's health-check path so a NOAA outage does not cause restart loops.
+- `/api/health/data` checks official-feed retrieval freshness, expected source coverage, loaded utility geometries and a real cache write/delete probe. It returns **503** for unavailable/stale/overdue feeds, missing utility data or unwritable cache; **200 with warning** for known partial GIS coverage and archived utility vintage. Verified no-active-storm responses do not require GIS geometry. The response is small, excludes paths and credentials, and identifies the Render commit when available.
+- Checks are coalesced and cached for 60 seconds. A recent retrieval must be within twice its refresh interval (minimum 30 minutes). Advisory-age checks also remain in the NOAA adapter. A writable directory does not prove persistent-disk attachment.
+- `.github/workflows/monitor-deployment.yml` checks the current Render deployment every 10 minutes and can be run manually under **GitHub → Actions → Monitor deployment**. The default URL is `https://hurricane-tracker-3cdl.onrender.com`. Set the repository Actions variable `STORMGRID_MONITOR_URL` to change it. Each run retries failures, prints individual checks and fails visibly when data readiness is broken. No paid monitor or secrets are required. This also warms the on-demand feed cache.
+- GitHub schedules can be delayed, disabled for inactivity, or limited by your Actions allowance. For a stricter operational SLA, point an external uptime monitor at `/api/health/data`. This repository does not configure email/SMS delivery; GitHub notification preferences remain yours.
+
+Run the same check manually with `STORMGRID_MONITOR_URL=https://your-app.example node scripts/check-deployment.mjs`.
+
+### Detailed MapLibre basemap
+
+The default map adds street, waterway, building and place context from **OpenFreeMap**, with OpenStreetMap/OpenMapTiles attribution. Its public instance requires no registration or API key and documents no request/view limit: [provider documentation](https://github.com/hyperknot/openfreemap#readme). Map data is periodically refreshed, not live weather or a verified infrastructure inventory. No uptime SLA is assumed.
+
+Browser networking must allow `https://tiles.openfreemap.org` for vector tiles and fonts. Requests go directly from the browser; no bulk download or server-side tile proxy is used. When it fails, the bundled Natural Earth/Census map and operational overlays remain usable, with an explicit fallback message. The **Basemap** button cycles detailed streets, the offline map and high contrast. Dark/light styling is supported; building detail appears at neighborhood zoom. These building outlines must not be interpreted as grid assets.
+
+Google Maps remains a possible future renderer, but this implementation keeps MapLibre and needs no Google billing account or key.
 
 - The open dashboard polls the server every 60 seconds. Conditional ETags avoid retransmitting unchanged geographic datasets.
 - NHC results are cached for 10 minutes; optional live boundary providers for 24 hours. Public services offer no application-guaranteed rate limit or SLA; recheck provider terms before public deployment.

@@ -12,6 +12,7 @@ import {
   type StormProperties,
   type UtilityFeature,
   type UtilityProperties,
+  type UtilityCoverage,
 } from "../types";
 
 export const NHC_CURRENT = "https://www.nhc.noaa.gov/CurrentStorms.json";
@@ -522,6 +523,7 @@ export function normalizeUtilities(
 export async function getUtilities(): Promise<{
   utilities: FeatureCollection<Area, UtilityProperties>;
   source: SourceStatus;
+  coverage?: UtilityCoverage;
 }> {
   const url = process.env.UTILITY_SERVICE_URL;
   if (!url && process.env.UTILITY_DISABLE_ARCHIVE !== "true")

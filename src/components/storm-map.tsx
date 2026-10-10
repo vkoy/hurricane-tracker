@@ -16,6 +16,13 @@ import {
 import type { DashboardData, LayerKey, UtilityFeature } from "@/lib/types";
 import { RISK_COLORS } from "@/lib/types";
 import { utilityAssessment } from "@/lib/selection";
+import {
+  DETAIL_SOURCE,
+  DETAIL_TILEJSON,
+  DETAIL_GLYPHS,
+  DETAIL_ATTRIBUTION,
+  detailLayers,
+} from "@/lib/basemap";
 
 interface Props {
   data: DashboardData | null;
@@ -88,7 +95,12 @@ export default function StormMap({
   const [idle, setIdle] = useState(false);
   const [featuresReady, setFeaturesReady] = useState(false);
   const [coordinates, setCoordinates] = useState("29.80° N   87.50° W");
-  const [mapStyle, setMapStyle] = useState<"standard" | "contrast">("standard");
+  const [mapStyle, setMapStyle] = useState<
+    "detailed" | "standard" | "contrast"
+  >("detailed");
+  const [detailStatus, setDetailStatus] = useState<
+    "loading" | "ready" | "unavailable"
+  >("loading");
   const stormMarkers = useRef<maplibregl.Marker[]>([]);
   const utilityMarkers = useRef<maplibregl.Marker[]>([]);
   const lastFocusedUtility = useRef<string | null>(null);
@@ -105,7 +117,7 @@ export default function StormMap({
         center: [-98, 32],
         zoom: 3.35,
         minZoom: 1.5,
-        maxZoom: 13,
+        maxZoom: 16,
         attributionControl: { compact: true },
         renderWorldCopies: false,
         style: {
@@ -369,6 +381,92 @@ export default function StormMap({
 
   useEffect(() => {
     const map = mapRef.current;
+    if (!map || !ready || mapStyle !== "detailed") return;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    let cancelled = false;
+    const fail = () => {
+      if (cancelled) return;
+      setDetailStatus("unavailable");
+      for (const layer of detailLayers(light))
+        if (map.getLayer(layer.id))
+          map.setLayoutProperty(layer.id, "visibility", "none");
+    };
+    const error = (event: maplibregl.ErrorEvent) => {
+      if (
+        (event as maplibregl.ErrorEvent & { sourceId?: string }).sourceId ===
+          DETAIL_SOURCE ||
+        /glyph|font/i.test(event.error?.message || "")
+      )
+        fail();
+    };
+    map.on("error", error);
+    if (map.getSource(DETAIL_SOURCE)) {
+      clearTimeout(timeout);
+      setDetailStatus("ready");
+    } else {
+      setDetailStatus("loading");
+      fetch(DETAIL_TILEJSON, { signal: controller.signal })
+        .then(async (response) => {
+          if (!response.ok) throw new Error("Basemap unavailable");
+          const tilejson = await response.json();
+          if (
+            !Array.isArray(tilejson.tiles) ||
+            !tilejson.tiles.length ||
+            tilejson.tiles.some(
+              (url: unknown) =>
+                typeof url !== "string" ||
+                !url.startsWith("https://tiles.openfreemap.org/"),
+            )
+          )
+            throw new Error("Invalid basemap tile source");
+          if (cancelled) return;
+          map.setGlyphs(DETAIL_GLYPHS);
+          map.addSource(DETAIL_SOURCE, {
+            type: "vector",
+            tiles: tilejson.tiles,
+            minzoom: tilejson.minzoom ?? 0,
+            maxzoom: tilejson.maxzoom ?? 14,
+            attribution: DETAIL_ATTRIBUTION,
+          });
+          for (const layer of detailLayers(light))
+            map.addLayer(layer, "graticule");
+          setDetailStatus("ready");
+        })
+        .catch(fail)
+        .finally(() => clearTimeout(timeout));
+    }
+    return () => {
+      cancelled = true;
+      clearTimeout(timeout);
+      controller.abort();
+      map.off("error", error);
+    };
+  }, [ready, mapStyle]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    for (const layer of detailLayers(light)) {
+      if (!map.getLayer(layer.id)) continue;
+      for (const [property, value] of Object.entries(layer.paint || {}))
+        map.setPaintProperty(
+          layer.id,
+          property as Parameters<MapInstance["setPaintProperty"]>[1],
+          value,
+        );
+      map.setLayoutProperty(
+        layer.id,
+        "visibility",
+        mapStyle === "detailed" && detailStatus === "ready"
+          ? "visible"
+          : "none",
+      );
+    }
+  }, [light, mapStyle, detailStatus, ready]);
+
+  useEffect(() => {
+    const map = mapRef.current;
     if (!map || !ready || !data) return;
     const geometry = data.geometry;
     setFeaturesReady(false);
@@ -477,9 +575,9 @@ export default function StormMap({
     const feature = data?.utilities.features.find(
       (f) => f.properties.id === selectedUtility,
     );
-    if(!selectedUtility) lastFocusedUtility.current=null;
-    if (feature && lastFocusedUtility.current!==selectedUtility) {
-      lastFocusedUtility.current=selectedUtility;
+    if (!selectedUtility) lastFocusedUtility.current = null;
+    if (feature && lastFocusedUtility.current !== selectedUtility) {
+      lastFocusedUtility.current = selectedUtility;
       const b = bbox(feature);
       map.fitBounds(
         [
@@ -584,8 +682,15 @@ export default function StormMap({
       <div className="map-bottom">
         <button
           className="basemap-button"
+          aria-label="Change basemap"
           onClick={() =>
-            setMapStyle((s) => (s === "standard" ? "contrast" : "standard"))
+            setMapStyle((s) =>
+              s === "detailed"
+                ? "standard"
+                : s === "standard"
+                  ? "contrast"
+                  : "detailed",
+            )
           }
         >
           <span className="mini-map">
@@ -593,7 +698,17 @@ export default function StormMap({
           </span>
           <span>
             BASEMAP
-            <b>{mapStyle === "standard" ? "Dark terrain" : "High contrast"}</b>
+            <b>
+              {mapStyle === "detailed"
+                ? detailStatus === "ready"
+                  ? "Streets & places"
+                  : detailStatus === "loading"
+                    ? "Loading streets…"
+                    : "Streets unavailable · offline map"
+                : mapStyle === "standard"
+                  ? "Offline map"
+                  : "High contrast"}
+            </b>
           </span>
         </button>
         <span className="coordinates">

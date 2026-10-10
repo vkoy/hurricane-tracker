@@ -6,8 +6,10 @@ export async function getDashboard(): Promise<DashboardData> {
   const weights = process.env.EXPOSURE_WEIGHTS
     ? validateWeights(JSON.parse(process.env.EXPOSURE_WEIGHTS))
     : DEFAULT_WEIGHTS;
-  const [{ storms, source: current }, { utilities, source: utilitySource }] =
-    await Promise.all([getStorms(), getUtilities()]);
+  const [
+    { storms, source: current },
+    { utilities, source: utilitySource, coverage },
+  ] = await Promise.all([getStorms(), getUtilities()]);
   const { geometry, source: gis } = await getGeometry(storms, current.state);
   for (const storm of storms) {
     const points = geometry.points.features
@@ -53,6 +55,7 @@ export async function getDashboard(): Promise<DashboardData> {
     sources: [current, gis, utilitySource],
     fetchedAt: new Date().toISOString(),
     weights,
+    utilityCoverage: coverage,
     forecastTimes: [
       ...new Set(
         geometry.points.features.flatMap((p) =>

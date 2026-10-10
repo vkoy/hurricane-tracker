@@ -11,1235 +11,1941 @@
   "publisher": "ORNL / DOE CESER; public HIFLD copy hosted by NBAM_Org",
   "license": "None (Public Domain Information); None (Public Use). Read source metadata for limitations.",
   "sourceRecordCount": 2931,
-  "includedCount": 2686,
-  "excludedCount": 245,
+  "includedCount": 2920,
+  "excludedCount": 11,
   "excluded": [
     {
       "id": "1702",
       "name": "CITY OF BIGGS - (CA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18959",
-      "name": "CITY OF TROY - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5928",
-      "name": "TOWN OF ETNA GREEN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12242",
-      "name": "CITY OF MEADE - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20192",
-      "name": "CITY OF WATHENA - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20227",
-      "name": "CITY OF WAYNOKA - (OK)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3366",
-      "name": "CITY OF CHAPMAN - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5372",
-      "name": "TOWN OF DREXEL - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5802",
-      "name": "CITY OF ELLINWOOD - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7677",
-      "name": "CITY OF GRIDLEY - (CA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8628",
-      "name": "CITY OF HILLSBORO - (ND)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10260",
-      "name": "CITY OF KIMBALL - (NE)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11376",
-      "name": "TOWN OF LYONS - (CO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11965",
-      "name": "CITY OF MCCLEARY - (WA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12660",
-      "name": "VILLAGE OF MINSTER - (OH)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1512",
-      "name": "CITY OF BELLEVILLE - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15433",
-      "name": "TOWN OF PROSPERITY - (SC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17827",
-      "name": "TOWN OF SPRINGER - (NM)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18277",
-      "name": "CITY OF SULLIVAN - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "2550",
-      "name": "CITY OF BURLINGTON - (CO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "40369",
-      "name": "CITY OF OXFORD - (GA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10040",
-      "name": "CITY OF KASSON",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12541",
-      "name": "CITY OF MILFORD - (IA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13467",
-      "name": "NEW LONDON ELECTRIC&WATER UTIL",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13602",
-      "name": "CITY OF NILES - (OH)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16198",
-      "name": "CITY OF ROCK FALLS - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18805",
-      "name": "TOWN OF THATCHER- (AZ)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "21021",
-      "name": "CITY OF WRAY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3208",
-      "name": "CEDARBURG LIGHT & WATER COMM",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "408",
-      "name": "CITY OF ALTAMONT - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4739",
-      "name": "TOWN OF DALLAS - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "58124",
-      "name": "CITY OF WINTER PARK - (FL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8348",
-      "name": "CITY OF HEALDSBURG - (CA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10056",
-      "name": "CITY OF KAUKAUNA",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1036",
-      "name": "TOWN OF AYDEN - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10669",
-      "name": "TOWN OF LANDIS - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13095",
-      "name": "CITY OF MULVANE - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "14947",
       "name": "CITY OF PHILADELPHIA - (MS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16914",
-      "name": "TOWN OF SELMA - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17324",
-      "name": "SLINGER UTILITIES",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17668",
-      "name": "CITY OF SOUTHPORT - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18181",
-      "name": "CITY OF STOUGHTON - (WI)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20739",
-      "name": "CITY OF WILLOW SPRINGS - (MO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3405",
-      "name": "VILLAGE OF CHATHAM - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4627",
-      "name": "CITY OF CUMBERLAND - (WI)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5551",
-      "name": "CITY OF EAGLE RIVER - (WI)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6610",
-      "name": "CITY OF FORT MORGAN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7096",
-      "name": "CITY OF GENEVA- (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7496",
-      "name": "TOWN OF GRANITE FALLS - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "918",
-      "name": "CITY OF ASPEN- (CO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10324",
-      "name": "CITY OF KINGS MOUNTAIN - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10800",
-      "name": "CITY OF LAWRENCEVILLE - (GA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10966",
-      "name": "CITY OF LEXINGTON - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11187",
-      "name": "CITY OF LONGMONT",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12298",
-      "name": "CITY OF MENASHA - (WI)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12801",
-      "name": "CITY OF MONROE - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12944",
-      "name": "CITY OF MORGANTON - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13481",
-      "name": "CITY OF NEW RICHMOND",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13547",
-      "name": "NEWNAN WTR, SEWER & LIGHT COMM",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13561",
-      "name": "CITY OF NEWTON - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14146",
-      "name": "CITY OF OPELIKA - (AL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15783",
-      "name": "CITY OF REDDING - (CA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17839",
-      "name": "CITY OF SPRINGFIELD - (OR)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17860",
-      "name": "CITY OF ST CHARLES - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18429",
-      "name": "CITY OF TACOMA - (WA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20225",
-      "name": "TOWN OF WAYNESVILLE - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20836",
-      "name": "CITY OF WINTERVILLE - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "2487",
-      "name": "CITY OF BUFORD",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "308",
-      "name": "CITY OF ACWORTH - (GA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3634",
-      "name": "CITY OF NIXA - (MO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3731",
-      "name": "TOWN OF CLAYTON",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4078",
-      "name": "CITY OF COMANCHE - (OK)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4280",
-      "name": "CONWAY CORPORATION",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4365",
-      "name": "TOWN OF CORNELIUS - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4433",
-      "name": "CITY OF COVINGTON - (GA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4744",
-      "name": "DALTON UTILITIES",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6638",
-      "name": "CITY OF FOUNTAIN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6709",
-      "name": "EASLEY COMBINED UTILITY SYSTEM",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6764",
-      "name": "VILLAGE OF FREEBURG - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6909",
-      "name": "GAINESVILLE REGIONAL UTILITIES",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6949",
-      "name": "CITY OF GARDNER - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8212",
-      "name": "HARTFORD ELECTRIC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8449",
-      "name": "HENDERSON CITY UTILITY COMM",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8515",
-      "name": "CITY OF HERMISTON",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "9087",
-      "name": "TOWN OF HUNTERSVILLE - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13208",
-      "name": "CITY OF NAPERVILLE - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13485",
-      "name": "NEW SMYRNA BEACH CITY OF",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13521",
-      "name": "CITY OF NEWBERRY - (FL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1586",
-      "name": "CITY OF BENTONVILLE - (AR)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16181",
-      "name": "ROCHESTER PUBLIC UTILITIES",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "16555",
       "name": "SALEM ELECTRIC - (OR)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17833",
-      "name": "CITY UTILITIES OF SPRINGFIELD - (MO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18022",
-      "name": "CITY OF STATESVILLE - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19974",
-      "name": "TOWN OF WAKE FOREST - (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4045",
-      "name": "CITY OF COLUMBIA - (MO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6604",
-      "name": "CITY OF FORT COLLINS - (CO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6616",
-      "name": "FORT PIERCE UTILITIES AUTHORITY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7129",
-      "name": "CITY OF GEORGETOWN - (TX)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "719",
-      "name": "TOWN OF APEX- (NC)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10454",
-      "name": "KOOTENAI ELECTRIC COOPERATIVE",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12312",
-      "name": "MERCED IRRIGATION DISTRICT",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "13027",
       "name": "MOUNTAIN ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14610",
-      "name": "ORLANDO UTILITIES COMM",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "19981",
       "name": "WAKE ELECTRIC MEMBERSHIP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "27238",
-      "name": "SOUTHWEST ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3989",
-      "name": "CITY OF COLORADO SPRINGS - (CO)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4524",
-      "name": "CRAWFORD ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5063",
-      "name": "CITY OF DENTON - (TX)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7654",
-      "name": "GREER COMMISSION OF PUBLIC WKS",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10066",
-      "name": "K C ELECTRIC ASSOCIATION",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12616",
-      "name": "CITY OF MILTON - (WA)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12860",
-      "name": "MORGAN COUNTY RURAL ELEC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16587",
-      "name": "SALT RIVER ELECTRIC COOP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18498",
-      "name": "TAYLOR COUNTY RURAL E C C",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20222",
-      "name": "WAYNE-WHITE COUNTIES ELEC COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "31833",
-      "name": "OKEFENOKE RURAL EL MEMBER CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4432",
-      "name": "COWETA-FAYETTE EL MEMBER CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5086",
-      "name": "DELTA MONTROSE ELECTRIC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7460",
-      "name": "GOODHUE COUNTY COOP ELEC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7548",
-      "name": "PUD NO 1 OF GRAYS HARBOR COUNTY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7787",
-      "name": "GUNNISON COUNTY ELEC ASSN.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "9475",
       "name": "ITASCA-MANTRAP CO-OP ELECTRICAL ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10000",
-      "name": "EVERGY METRO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1015",
-      "name": "AUSTIN ENERGY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10681",
-      "name": "LANE ELECTRIC COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11208",
-      "name": "LOS ANGELES DEPARTMENT OF WATER & POWER",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11345",
-      "name": "LYON ELECTRIC COOPERATIVE, INC.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "11910",
-      "name": "MCLEOD COOPERATIVE POWER ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12351",
-      "name": "CITY OF MESA - (AZ)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13058",
-      "name": "MOUNTAIN VIEW ELEC ASSN, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13651",
-      "name": "NOLIN RURAL ELECTRIC COOP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "13684",
       "name": "NOBLES COOPERATIVE ELECTRIC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14251",
-      "name": "OWEN ELECTRIC COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14398",
-      "name": "PALMETTO ELECTRIC COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14468",
-      "name": "PEOPLE'S COOPERATIVE SERVICES",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14606",
-      "name": "PEACE RIVER ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14668",
-      "name": "PENINSULA LIGHT COMPANY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15257",
-      "name": "POUDRE VALLEY REA, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1613",
-      "name": "BERKELEY ELECTRIC COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16603",
-      "name": "SAN LUIS VALLEY R E C, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16606",
-      "name": "SANTEE ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16616",
-      "name": "SAN ISABEL ELECTRIC ASSN, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17044",
-      "name": "SHELBY ENERGY CO-OP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "17267",
       "name": "SIOUX VALLEY SW ELEC COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17564",
-      "name": "SOUTH KENTUCKY RURAL E C C",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17592",
-      "name": "SOUTHEAST COLORADO POWER ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17697",
-      "name": "SOUTHWESTERN ELECTRIC COOP INC - (IL)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18047",
-      "name": "STEELE-WASECA COOPERATIVE ELECTRIC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1884",
-      "name": "BENCO ELECTRIC COOPERATIVE",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19157",
-      "name": "MIENERGY COOPERATIVE",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19791",
-      "name": "VERMONT ELECTRIC COOPERATIVE, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "20130",
       "name": "WARREN RURAL ELEC COOP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20138",
-      "name": "WASCO ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20382",
-      "name": "CITY OF WEST MEMPHIS - (AR)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20996",
-      "name": "WRIGHT-HENNEPIN COOP ELEC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "21075",
       "name": "Y-W ELECTRIC ASSN INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "26939",
-      "name": "RED RIVER VALLEY COOP PWR ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "27422",
-      "name": "TODD-WADENA ELECTRIC COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3687",
-      "name": "CLARK ENERGY COOP INC - (KY)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "40165",
-      "name": "DIXIE ESCALANTE R E A, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4065",
-      "name": "CITY OF COLUMBUS - (OH)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4176",
-      "name": "CONNECTICUT LIGHT & POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4317",
-      "name": "COOS-CURRY ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4622",
-      "name": "CUMBERLAND VALLEY ELECTRIC, INC.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6194",
-      "name": "FARMERS RURAL ELECTRIC COOP CORP - (KY)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6258",
-      "name": "FEDERATED RURAL ELECTRIC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6411",
-      "name": "FLINT ELECTRIC MEMBERSHIP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6442",
-      "name": "FLEMING-MASON ENERGY COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "6782",
-      "name": "FREEBORN MOWER ELECTRIC COOPERATIVE",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "7563",
-      "name": "GRAND VALLEY POWER",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "84",
-      "name": "A & N ELECTRIC COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8570",
-      "name": "HIGHLINE ELECTRIC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "8773",
-      "name": "HOLY CROSS ELECTRIC ASSN, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "9292",
-      "name": "INTER COUNTY ENERGY COOP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "9575",
-      "name": "JACKSON ENERGY COOP CORP - (KY)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "963",
-      "name": "ATLANTIC CITY ELECTRIC CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "9689",
-      "name": "JEFFERSON ELECTRIC MEMBER CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "9996",
-      "name": "CITY OF KANSAS CITY - (KS)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10171",
-      "name": "KENTUCKY UTILITIES CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10433",
-      "name": "KODIAK ELECTRIC ASSN INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10451",
-      "name": "KOTZEBUE ELECTRIC ASSN INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10455",
-      "name": "KOKHANOK VILLAGE COUNCIL",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10491",
-      "name": "KWIG POWER COMPANY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10618",
-      "name": "LAKE REGION ELECTRIC COOPERATIVE - (MN)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "10697",
-      "name": "LAKE COUNTRY POWER",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12199",
-      "name": "MONTANA-DAKOTA UTILITIES CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12485",
-      "name": "MIDDLE KUSKOKWIM ELEC COOP INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12524",
-      "name": "MIDWEST ENERGY INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12647",
-      "name": "ALLETE, INC.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12651",
-      "name": "MINNESOTA VALLEY ELECTRIC COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1276",
-      "name": "BARROW UTILS & ELEC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "12825",
-      "name": "NORTHWESTERN ENERGY LLC - (MT)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13211",
-      "name": "NAPAKIAK IRCINRAQ POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13781",
-      "name": "NORTHERN STATES POWER CO - MINNESOTA",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "13870",
-      "name": "NUSHAGAK ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14232",
-      "name": "OTTER TAIL POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14328",
-      "name": "PACIFIC GAS & ELECTRIC CO.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14354",
-      "name": "PACIFICORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "14711",
-      "name": "PENNSYLVANIA ELECTRIC CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15248",
-      "name": "PORTLAND GENERAL ELECTRIC CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15466",
-      "name": "PUBLIC SERVICE CO OF COLORADO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "15500",
-      "name": "PUGET SOUND ENERGY INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "16368",
-      "name": "RUNESTONE ELECTRIC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1675",
-      "name": "BIG HORN RURAL ELECTRIC CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1738",
-      "name": "BONNEVILLE POWER ADMINISTRATION",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1747",
-      "name": "BIRCH CREEK VILLAGE ELEC UTIL - (AK)",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17593",
-      "name": "SOUTHEAST ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17609",
-      "name": "SOUTHERN CALIFORNIA EDISON CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "17684",
-      "name": "SOUTHWEST LOUISIANA E M C",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18019",
-      "name": "STEARNS COOPERATIVE ELEC ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "18480",
-      "name": "TATITLEK ELECTRIC UTILITY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "1886",
-      "name": "BLUE GRASS ENERGY COOP CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19156",
-      "name": "POWDER RIVER ENERGY CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "192",
-      "name": "AKIACHAK NATIVE COMMUNITY ELECTRIC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19267",
-      "name": "TUNTUTULIAK COMM SERVICES ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19277",
-      "name": "TDX NORTH SLOPE GENERATING CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19545",
-      "name": "BLACK HILLS POWER, INC.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19558",
-      "name": "HOMER ELECTRIC ASSN INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "19876",
-      "name": "VIRGINIA ELECTRIC & POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "20910",
-      "name": "WOLVERINE POWER SUPPLY COOP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "22053",
-      "name": "KENTUCKY POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "221",
-      "name": "ALASKA VILLAGE ELEC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "26616",
-      "name": "NORTH SLOPE BOROUGH POWER & LIGHT",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "27000",
-      "name": "WAPA-- WESTERN AREA POWER ADMINISTRATION",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3265",
-      "name": "CLECO POWER LLC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3465",
-      "name": "CHITINA ELECTRIC INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "3522",
-      "name": "CHUGACH ELECTRIC ASSN INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "40215",
-      "name": "CORDOVA ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "40304",
-      "name": "MINNESOTA VALLEY COOP L&P ASSN",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4329",
-      "name": "COPPER VALLEY ELEC ASSN, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "4959",
-      "name": "ANIAK LIGHT & POWER CO INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5109",
-      "name": "DTE ELECTRIC COMPANY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5574",
-      "name": "EAST CENTRAL ENERGY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "5580",
-      "name": "EAST KENTUCKY POWER COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
-    },
-    {
-      "id": "56146",
-      "name": "BLACK HILLS COLORADO ELECTRIC, LLC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
     },
     {
       "id": "60631",
       "name": "UPPER MICHIGAN ENERGY RESOURCES CORP.",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "reason": "An individual polygon is invalid; no repair attempted"
+    }
+  ],
+  "processing": "GEOS validity checks and topology-preserving generalization at 0.002 degrees. Invalid multipart records are recovered only when all individual polygons are valid and their union preserves every source component. No invalid individual polygon repair or inferred coverage. Per-record recovery audit retained.",
+  "limitations": "Archived, not current legal boundaries. Source geometries may be county approximations, overlap or omit territories. Source attributes have varying vintages. STATE and CITY are provider entity attributes, not a computed list of every state/city intersecting the territory. Customers are entity totals from YEAR, never modeled exposed customers.",
+  "recovered": [
+    {
+      "id": "12242",
+      "name": "CITY OF MEADE - (KS)",
+      "originalValidity": "Nested shells[-100.334284999935 37.2796499998388]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18959",
+      "name": "CITY OF TROY - (KS)",
+      "originalValidity": "Nested shells[-95.0993069997018 39.7824109998096]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20192",
+      "name": "CITY OF WATHENA - (KS)",
+      "originalValidity": "Nested shells[-94.9258020001517 39.7609719997832]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20227",
+      "name": "CITY OF WAYNOKA - (OK)",
+      "originalValidity": "Nested shells[-98.8681920000754 36.5892540002259]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3366",
+      "name": "CITY OF CHAPMAN - (KS)",
+      "originalValidity": "Nested shells[-97.028734000036 38.9781539997041]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5372",
+      "name": "TOWN OF DREXEL - (NC)",
+      "originalValidity": "Nested shells[-81.6222519996384 35.7542829999418]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5802",
+      "name": "CITY OF ELLINWOOD - (KS)",
+      "originalValidity": "Nested shells[-98.5855550002491 38.3650859998883]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5928",
+      "name": "TOWN OF ETNA GREEN",
+      "originalValidity": "Nested shells[-86.0501230003723 41.2740549999822]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7677",
+      "name": "CITY OF GRIDLEY - (CA)",
+      "originalValidity": "Nested shells[-121.70967999989 39.3591300000918]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10260",
+      "name": "CITY OF KIMBALL - (NE)",
+      "originalValidity": "Nested shells[-103.674948000188 41.2345249999001]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11376",
+      "name": "TOWN OF LYONS - (CO)",
+      "originalValidity": "Nested shells[-105.263001850778 40.2193919972935]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11965",
+      "name": "CITY OF MCCLEARY - (WA)",
+      "originalValidity": "Nested shells[-123.281477992794 47.0547162041977]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12660",
+      "name": "VILLAGE OF MINSTER - (OH)",
+      "originalValidity": "Nested shells[-84.3822840004187 40.4002130001027]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1512",
+      "name": "CITY OF BELLEVILLE - (KS)",
+      "originalValidity": "Nested shells[-97.6368779999553 39.8299540001099]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15433",
+      "name": "TOWN OF PROSPERITY - (SC)",
+      "originalValidity": "Nested shells[-81.5219610000979 34.2175780002461]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17827",
+      "name": "TOWN OF SPRINGER - (NM)",
+      "originalValidity": "Nested shells[-104.606768999914 36.3516910001358]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18277",
+      "name": "CITY OF SULLIVAN - (IL)",
+      "originalValidity": "Nested shells[-88.6202250001318 39.5997480000636]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "2550",
+      "name": "CITY OF BURLINGTON - (CO)",
+      "originalValidity": "Nested shells[-102.277064417617 39.2952545387215]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8628",
+      "name": "CITY OF HILLSBORO - (ND)",
+      "originalValidity": "Nested shells[-97.0670449999302 47.4042109997409]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10040",
+      "name": "CITY OF KASSON",
+      "originalValidity": "Nested shells[-92.7382461016773 44.0285545289239]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12541",
+      "name": "CITY OF MILFORD - (IA)",
+      "originalValidity": "Nested shells[-95.1318599998474 43.3402420001578]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13467",
+      "name": "NEW LONDON ELECTRIC&WATER UTIL",
+      "originalValidity": "Nested shells[-88.7582080001486 44.3736759997002]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13602",
+      "name": "CITY OF NILES - (OH)",
+      "originalValidity": "Nested shells[-80.740288000339 41.20609699976]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16198",
+      "name": "CITY OF ROCK FALLS - (IL)",
+      "originalValidity": "Nested shells[-89.6841759996916 41.759840999993]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18805",
+      "name": "TOWN OF THATCHER- (AZ)",
+      "originalValidity": "Nested shells[-109.744895000348 32.8221559997304]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "21021",
+      "name": "CITY OF WRAY",
+      "originalValidity": "Nested shells[-102.227573823825 40.1030064728016]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3208",
+      "name": "CEDARBURG LIGHT & WATER COMM",
+      "originalValidity": "Nested shells[-87.9982349999387 43.3126920001433]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "40369",
+      "name": "CITY OF OXFORD - (GA)",
+      "originalValidity": "Nested shells[-83.8828650001715 33.6285720000165]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "408",
+      "name": "CITY OF ALTAMONT - (KS)",
+      "originalValidity": "Nested shells[-95.2948230000437 37.1858729997818]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10056",
+      "name": "CITY OF KAUKAUNA",
+      "originalValidity": "Nested shells[-88.2783000000373 44.2431549999433]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1036",
+      "name": "TOWN OF AYDEN - (NC)",
+      "originalValidity": "Nested shells[-77.4535530000914 35.4659929998559]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10669",
+      "name": "TOWN OF LANDIS - (NC)",
+      "originalValidity": "Nested shells[-80.6301740004218 35.5370020000732]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13095",
+      "name": "CITY OF MULVANE - (KS)",
+      "originalValidity": "Nested shells[-97.2309970003386 37.4780429999795]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16914",
+      "name": "TOWN OF SELMA - (NC)",
+      "originalValidity": "Nested shells[-78.3174179999644 35.5535070002234]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17324",
+      "name": "SLINGER UTILITIES",
+      "originalValidity": "Nested shells[-88.2895460000961 43.3211889998323]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4739",
+      "name": "TOWN OF DALLAS - (NC)",
+      "originalValidity": "Nested shells[-81.2060150004408 35.3259149996922]",
+      "sourceComponentCount": 18,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "58124",
+      "name": "CITY OF WINTER PARK - (FL)",
+      "originalValidity": "Nested shells[-81.3722719997148 28.5923390000161]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8348",
+      "name": "CITY OF HEALDSBURG - (CA)",
+      "originalValidity": "Nested shells[-122.876532000149 38.617294000229]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17668",
+      "name": "CITY OF SOUTHPORT - (NC)",
+      "originalValidity": "Nested shells[-78.0289480000465 33.9411669997225]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18181",
+      "name": "CITY OF STOUGHTON - (WI)",
+      "originalValidity": "Nested shells[-89.2507170002285 42.9394999999164]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20739",
+      "name": "CITY OF WILLOW SPRINGS - (MO)",
+      "originalValidity": "Nested shells[-91.9929679998032 37.0160260003248]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3405",
+      "name": "VILLAGE OF CHATHAM - (IL)",
+      "originalValidity": "Nested shells[-89.6994070000126 39.633754999824]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4627",
+      "name": "CITY OF CUMBERLAND - (WI)",
+      "originalValidity": "Nested shells[-92.0194850003658 45.5136940002566]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5551",
+      "name": "CITY OF EAGLE RIVER - (WI)",
+      "originalValidity": "Nested shells[-89.2570700000038 45.9417510001208]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6610",
+      "name": "CITY OF FORT MORGAN",
+      "originalValidity": "Nested shells[-103.776949887899 40.2737375766777]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7096",
+      "name": "CITY OF GENEVA- (IL)",
+      "originalValidity": "Nested shells[-88.2827859997167 41.8925879997255]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7496",
+      "name": "TOWN OF GRANITE FALLS - (NC)",
+      "originalValidity": "Nested shells[-81.3904999999108 35.7818040000799]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "918",
+      "name": "CITY OF ASPEN- (CO)",
+      "originalValidity": "Nested shells[-106.856138768996 39.2091033688779]",
+      "sourceComponentCount": 10,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10324",
+      "name": "CITY OF KINGS MOUNTAIN - (NC)",
+      "originalValidity": "Nested shells[-81.3981299997782 35.2457049999135]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10800",
+      "name": "CITY OF LAWRENCEVILLE - (GA)",
+      "originalValidity": "Nested shells[-84.0107770001145 33.9670600003423]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10966",
+      "name": "CITY OF LEXINGTON - (NC)",
+      "originalValidity": "Nested shells[-80.2605099999242 35.8451269998386]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11187",
+      "name": "CITY OF LONGMONT",
+      "originalValidity": "Nested shells[-105.123377158918 40.1630964208058]",
+      "sourceComponentCount": 41,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12298",
+      "name": "CITY OF MENASHA - (WI)",
+      "originalValidity": "Nested shells[-88.4348719999252 44.2199599997028]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12801",
+      "name": "CITY OF MONROE - (NC)",
+      "originalValidity": "Nested shells[-80.5821630001745 34.978623000099]",
+      "sourceComponentCount": 27,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12944",
+      "name": "CITY OF MORGANTON - (NC)",
+      "originalValidity": "Nested shells[-81.7105289997394 35.7421600001714]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13481",
+      "name": "CITY OF NEW RICHMOND",
+      "originalValidity": "Nested shells[-92.5572480001191 45.120504000261]",
+      "sourceComponentCount": 17,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13547",
+      "name": "NEWNAN WTR, SEWER & LIGHT COMM",
+      "originalValidity": "Nested shells[-84.7889040000022 33.4074199997038]",
+      "sourceComponentCount": 10,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13561",
+      "name": "CITY OF NEWTON - (NC)",
+      "originalValidity": "Nested shells[-81.2048019999227 35.6504719998213]",
+      "sourceComponentCount": 10,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14146",
+      "name": "CITY OF OPELIKA - (AL)",
+      "originalValidity": "Nested shells[-85.3113669998376 32.6663610001026]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15783",
+      "name": "CITY OF REDDING - (CA)",
+      "originalValidity": "Nested shells[-122.317109000132 40.5824599997858]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17839",
+      "name": "CITY OF SPRINGFIELD - (OR)",
+      "originalValidity": "Nested shells[-123.045915000068 44.0506139999499]",
+      "sourceComponentCount": 45,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17860",
+      "name": "CITY OF ST CHARLES - (IL)",
+      "originalValidity": "Nested shells[-88.3572140000691 41.9145569998461]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18429",
+      "name": "CITY OF TACOMA - (WA)",
+      "originalValidity": "Nested shells[-122.511273000038 47.294378999893]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20225",
+      "name": "TOWN OF WAYNESVILLE - (NC)",
+      "originalValidity": "Nested shells[-83.0122750000791 35.4715739996462]",
+      "sourceComponentCount": 59,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20836",
+      "name": "CITY OF WINTERVILLE - (NC)",
+      "originalValidity": "Nested shells[-77.4187010000296 35.5369159998835]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "2487",
+      "name": "CITY OF BUFORD",
+      "originalValidity": "Nested shells[-83.9515270003795 34.1243410001619]",
+      "sourceComponentCount": 39,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "308",
+      "name": "CITY OF ACWORTH - (GA)",
+      "originalValidity": "Nested shells[-84.6947329997102 34.0480289996761]",
+      "sourceComponentCount": 29,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3634",
+      "name": "CITY OF NIXA - (MO)",
+      "originalValidity": "Nested shells[-93.3269629996166 37.0306689998074]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3731",
+      "name": "TOWN OF CLAYTON",
+      "originalValidity": "Nested shells[-78.4916010002803 35.6349349999681]",
+      "sourceComponentCount": 26,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4078",
+      "name": "CITY OF COMANCHE - (OK)",
+      "originalValidity": "Nested shells[-97.8780399996078 34.340833000276]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4280",
+      "name": "CONWAY CORPORATION",
+      "originalValidity": "Nested shells[-92.4436560001029 35.1271309997164]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4365",
+      "name": "TOWN OF CORNELIUS - (NC)",
+      "originalValidity": "Nested shells[-80.8289839998414 35.4697489999884]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4433",
+      "name": "CITY OF COVINGTON - (GA)",
+      "originalValidity": "Nested shells[-83.8079940001282 33.6189609997726]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4744",
+      "name": "DALTON UTILITIES",
+      "originalValidity": "Nested shells[-84.9834960004294 34.7930819998632]",
+      "sourceComponentCount": 60,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6638",
+      "name": "CITY OF FOUNTAIN",
+      "originalValidity": "Nested shells[-104.673811337665 38.697594711917]",
+      "sourceComponentCount": 23,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6709",
+      "name": "EASLEY COMBINED UTILITY SYSTEM",
+      "originalValidity": "Nested shells[-82.5942749996442 34.8447009999104]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6764",
+      "name": "VILLAGE OF FREEBURG - (IL)",
+      "originalValidity": "Nested shells[-89.9322309997929 38.4418119997908]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6909",
+      "name": "GAINESVILLE REGIONAL UTILITIES",
+      "originalValidity": "Nested shells[-82.3883650000866 29.7387329997745]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13208",
+      "name": "CITY OF NAPERVILLE - (IL)",
+      "originalValidity": "Nested shells[-88.230766999641 41.6794819997438]",
+      "sourceComponentCount": 69,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13485",
+      "name": "NEW SMYRNA BEACH CITY OF",
+      "originalValidity": "Nested shells[-80.9699470000148 29.0155800000107]",
+      "sourceComponentCount": 116,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13521",
+      "name": "CITY OF NEWBERRY - (FL)",
+      "originalValidity": "Nested shells[-82.5402959995861 29.6414900003485]",
+      "sourceComponentCount": 53,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1586",
+      "name": "CITY OF BENTONVILLE - (AR)",
+      "originalValidity": "Nested shells[-94.3081229997358 36.3181370000744]",
+      "sourceComponentCount": 34,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16181",
+      "name": "ROCHESTER PUBLIC UTILITIES",
+      "originalValidity": "Nested shells[-92.5381767720272 44.0339627902887]",
+      "sourceComponentCount": 18,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6949",
+      "name": "CITY OF GARDNER - (KS)",
+      "originalValidity": "Nested shells[-94.9609150003294 38.8257660003499]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8212",
+      "name": "HARTFORD ELECTRIC",
+      "originalValidity": "Nested shells[-88.4161499999848 43.34534799975]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8449",
+      "name": "HENDERSON CITY UTILITY COMM",
+      "originalValidity": "Nested shells[-87.6450100002572 37.7945840002023]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8515",
+      "name": "CITY OF HERMISTON",
+      "originalValidity": "Nested shells[-119.300580252048 45.8619028779283]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "9087",
+      "name": "TOWN OF HUNTERSVILLE - (NC)",
+      "originalValidity": "Nested shells[-80.9297480001082 35.4252800003643]",
+      "sourceComponentCount": 22,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10454",
+      "name": "KOOTENAI ELECTRIC COOPERATIVE",
+      "originalValidity": "Nested shells[-116.882646081832 47.3228007631684]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17833",
+      "name": "CITY UTILITIES OF SPRINGFIELD - (MO)",
+      "originalValidity": "Nested shells[-93.406440999713 37.2458519997477]",
+      "sourceComponentCount": 24,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18022",
+      "name": "CITY OF STATESVILLE - (NC)",
+      "originalValidity": "Nested shells[-80.8676169999508 35.7406500000705]",
+      "sourceComponentCount": 66,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19974",
+      "name": "TOWN OF WAKE FOREST - (NC)",
+      "originalValidity": "Nested shells[-78.5449240002122 35.9653070000973]",
+      "sourceComponentCount": 67,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4045",
+      "name": "CITY OF COLUMBIA - (MO)",
+      "originalValidity": "Nested shells[-92.3892360000038 38.9058090002448]",
+      "sourceComponentCount": 43,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6604",
+      "name": "CITY OF FORT COLLINS - (CO)",
+      "originalValidity": "Nested shells[-105.019941595946 40.6002275392877]",
+      "sourceComponentCount": 24,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6616",
+      "name": "FORT PIERCE UTILITIES AUTHORITY",
+      "originalValidity": "Nested shells[-80.348980000369 27.3945999996203]",
+      "sourceComponentCount": 114,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7129",
+      "name": "CITY OF GEORGETOWN - (TX)",
+      "originalValidity": "Nested shells[-97.7303010000597 30.7460489997145]",
+      "sourceComponentCount": 36,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "719",
+      "name": "TOWN OF APEX- (NC)",
+      "originalValidity": "Nested shells[-78.9270549998859 35.7705500000839]",
+      "sourceComponentCount": 112,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10066",
+      "name": "K C ELECTRIC ASSOCIATION",
+      "originalValidity": "Nested shells[-102.261645416077 39.3156545431893]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12312",
+      "name": "MERCED IRRIGATION DISTRICT",
+      "originalValidity": "Nested shells[-120.588722855631 37.2651010822014]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14610",
+      "name": "ORLANDO UTILITIES COMM",
+      "originalValidity": "Nested shells[-81.4427399999194 28.5332660002702]",
+      "sourceComponentCount": 55,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "27238",
+      "name": "SOUTHWEST ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-93.0720250000105 37.4690809999963]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3989",
+      "name": "CITY OF COLORADO SPRINGS - (CO)",
+      "originalValidity": "Nested shells[-104.826540740026 39.0263124137045]",
+      "sourceComponentCount": 53,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4524",
+      "name": "CRAWFORD ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-91.0993231637453 37.779124908268]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5063",
+      "name": "CITY OF DENTON - (TX)",
+      "originalValidity": "Nested shells[-97.2185920001885 33.2279799996907]",
+      "sourceComponentCount": 49,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7654",
+      "name": "GREER COMMISSION OF PUBLIC WKS",
+      "originalValidity": "Nested shells[-82.2577869998063 34.9437740001242]",
+      "sourceComponentCount": 85,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12616",
+      "name": "CITY OF MILTON - (WA)",
+      "originalValidity": "Nested shells[-122.331791607718 47.2573337699093]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12860",
+      "name": "MORGAN COUNTY RURAL ELEC ASSN",
+      "originalValidity": "Nested shells[-103.780163884814 40.2397245717479]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16587",
+      "name": "SALT RIVER ELECTRIC COOP CORP",
+      "originalValidity": "Nested shells[-85.1331053507895 37.6612632241638]",
+      "sourceComponentCount": 18,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18498",
+      "name": "TAYLOR COUNTY RURAL E C C",
+      "originalValidity": "Nested shells[-85.2099109958663 37.0818154268153]",
+      "sourceComponentCount": 24,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20222",
+      "name": "WAYNE-WHITE COUNTIES ELEC COOP",
+      "originalValidity": "Nested shells[-88.3742520002117 38.0109989998441]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "31833",
+      "name": "OKEFENOKE RURAL EL MEMBER CORP",
+      "originalValidity": "Nested shells[-82.0114170002262 30.5863150002634]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4432",
+      "name": "COWETA-FAYETTE EL MEMBER CORP",
+      "originalValidity": "Nested shells[-84.4701753340052 33.3946513062026]",
+      "sourceComponentCount": 10,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5086",
+      "name": "DELTA MONTROSE ELECTRIC ASSN",
+      "originalValidity": "Nested shells[-108.064635860038 38.8025812686621]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7460",
+      "name": "GOODHUE COUNTY COOP ELEC ASSN",
+      "originalValidity": "Nested shells[-93.000357331185 44.269294984201]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7548",
+      "name": "PUD NO 1 OF GRAYS HARBOR COUNTY",
+      "originalValidity": "Nested shells[-123.28325550362 47.0547258839346]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10000",
+      "name": "EVERGY METRO",
+      "originalValidity": "Nested shells[-95.2098238832442 38.4492397798713]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1015",
+      "name": "AUSTIN ENERGY",
+      "originalValidity": "Nested shells[-97.5395990003585 30.282527999724]",
+      "sourceComponentCount": 100,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10681",
+      "name": "LANE ELECTRIC COOP INC",
+      "originalValidity": "Nested shells[-122.821170505445 43.864015806249]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11208",
+      "name": "LOS ANGELES DEPARTMENT OF WATER & POWER",
+      "originalValidity": "Nested shells[-118.345918999623 34.142398999753]",
+      "sourceComponentCount": 14,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11345",
+      "name": "LYON ELECTRIC COOPERATIVE, INC.",
+      "originalValidity": "Nested shells[-95.8153593157156 44.2253000410541]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "11910",
+      "name": "MCLEOD COOPERATIVE POWER ASSN",
+      "originalValidity": "Nested shells[-94.157310915703 44.7357290900524]",
+      "sourceComponentCount": 15,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12351",
+      "name": "CITY OF MESA - (AZ)",
+      "originalValidity": "Nested shells[-111.565348900702 33.208711109932]",
+      "sourceComponentCount": 26,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13058",
+      "name": "MOUNTAIN VIEW ELEC ASSN, INC",
+      "originalValidity": "Nested shells[-104.663606326917 38.5815953651067]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7787",
+      "name": "GUNNISON COUNTY ELEC ASSN.",
+      "originalValidity": "Nested shells[-106.933140224347 38.5734799563056]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13651",
+      "name": "NOLIN RURAL ELECTRIC COOP CORP",
+      "originalValidity": "Nested shells[-85.7268719142995 37.5052132887939]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14251",
+      "name": "OWEN ELECTRIC COOP INC",
+      "originalValidity": "Nested shells[-85.0183719082541 38.7567654201271]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14398",
+      "name": "PALMETTO ELECTRIC COOP INC",
+      "originalValidity": "Nested shells[-81.0063230000409 32.3061959999017]",
+      "sourceComponentCount": 23,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14468",
+      "name": "PEOPLE'S COOPERATIVE SERVICES",
+      "originalValidity": "Nested shells[-92.47844145207 43.9729408941042]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14606",
+      "name": "PEACE RIVER ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-81.7852807160893 27.6551665012508]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14668",
+      "name": "PENINSULA LIGHT COMPANY",
+      "originalValidity": "Nested shells[-122.281573889687 46.8763184412755]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15257",
+      "name": "POUDRE VALLEY REA, INC",
+      "originalValidity": "Nested shells[-105.127778643299 40.1668332782962]",
+      "sourceComponentCount": 99,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1613",
+      "name": "BERKELEY ELECTRIC COOP INC",
+      "originalValidity": "Nested shells[-79.912034613237 33.4135261158631]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16603",
+      "name": "SAN LUIS VALLEY R E C, INC",
+      "originalValidity": "Nested shells[-106.106329363606 37.7558197159082]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16606",
+      "name": "SANTEE ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-79.3886844668715 33.4028330033543]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16616",
+      "name": "SAN ISABEL ELECTRIC ASSN, INC",
+      "originalValidity": "Nested shells[-104.508679724422 37.1445030770421]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17044",
+      "name": "SHELBY ENERGY CO-OP, INC",
+      "originalValidity": "Nested shells[-85.2499562212642 38.5263218323317]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17564",
+      "name": "SOUTH KENTUCKY RURAL E C C",
+      "originalValidity": "Nested shells[-84.4988302198412 36.6834952597235]",
+      "sourceComponentCount": 33,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17592",
+      "name": "SOUTHEAST COLORADO POWER ASSN",
+      "originalValidity": "Nested shells[-102.604793751807 38.1070717601987]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17697",
+      "name": "SOUTHWESTERN ELECTRIC COOP INC - (IL)",
+      "originalValidity": "Nested shells[-90.4794789998141 38.9685909999023]",
+      "sourceComponentCount": 21,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18047",
+      "name": "STEELE-WASECA COOPERATIVE ELECTRIC",
+      "originalValidity": "Nested shells[-93.2440467947883 44.3677595259056]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1884",
+      "name": "BENCO ELECTRIC COOPERATIVE",
+      "originalValidity": "Nested shells[-94.1399820302917 44.2759717150148]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19157",
+      "name": "MIENERGY COOPERATIVE",
+      "originalValidity": "Nested shells[-91.7602378443256 43.8235632288662]",
+      "sourceComponentCount": 17,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19791",
+      "name": "VERMONT ELECTRIC COOPERATIVE, INC",
+      "originalValidity": "Nested shells[-72.829499999742 44.5524000000933]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20138",
+      "name": "WASCO ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-120.747474343569 45.579337567807]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20382",
+      "name": "CITY OF WEST MEMPHIS - (AR)",
+      "originalValidity": "Nested shells[-89.9057788360342 34.9863964662528]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20996",
+      "name": "WRIGHT-HENNEPIN COOP ELEC ASSN",
+      "originalValidity": "Nested shells[-93.8493202767262 45.2191580868929]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "26939",
+      "name": "RED RIVER VALLEY COOP PWR ASSN",
+      "originalValidity": "Nested shells[-96.6319680663684 46.7083720358661]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "27422",
+      "name": "TODD-WADENA ELECTRIC COOP",
+      "originalValidity": "Nested shells[-95.0679018982673 46.2214623371187]",
+      "sourceComponentCount": 14,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3687",
+      "name": "CLARK ENERGY COOP INC - (KY)",
+      "originalValidity": "Nested shells[-84.1130708483782 37.7762392842828]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "40165",
+      "name": "DIXIE ESCALANTE R E A, INC",
+      "originalValidity": "Nested shells[-112.332365789582 38.9973107143064]",
+      "sourceComponentCount": 8,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4065",
+      "name": "CITY OF COLUMBUS - (OH)",
+      "originalValidity": "Nested shells[-82.7448241234371 39.9748027581895]",
+      "sourceComponentCount": 22,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4176",
+      "name": "CONNECTICUT LIGHT & POWER CO",
+      "originalValidity": "Nested shells[-72.3652299996575 41.294769999835]",
+      "sourceComponentCount": 57,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4317",
+      "name": "COOS-CURRY ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-123.819122556864 42.2375788117771]",
+      "sourceComponentCount": 6,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4622",
+      "name": "CUMBERLAND VALLEY ELECTRIC, INC.",
+      "originalValidity": "Nested shells[-84.0595623436451 36.9091603986852]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6194",
+      "name": "FARMERS RURAL ELECTRIC COOP CORP - (KY)",
+      "originalValidity": "Nested shells[-86.0065153332386 37.1693393192494]",
+      "sourceComponentCount": 26,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6258",
+      "name": "FEDERATED RURAL ELECTRIC ASSN",
+      "originalValidity": "Nested shells[-95.1745700110603 43.6853922268089]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6411",
+      "name": "FLINT ELECTRIC MEMBERSHIP CORP",
+      "originalValidity": "Nested shells[-83.8220944239517 32.5129774722049]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6442",
+      "name": "FLEMING-MASON ENERGY COOP INC",
+      "originalValidity": "Nested shells[-83.9086714198697 38.5397058872594]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "6782",
+      "name": "FREEBORN MOWER ELECTRIC COOPERATIVE",
+      "originalValidity": "Nested shells[-92.9799503980971 43.7393981588897]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "7563",
+      "name": "GRAND VALLEY POWER",
+      "originalValidity": "Nested shells[-107.665309975746 39.153723215808]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10171",
+      "name": "KENTUCKY UTILITIES CO",
+      "originalValidity": "Nested shells[-88.1583400046687 37.1969099938276]",
+      "sourceComponentCount": 202,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10433",
+      "name": "KODIAK ELECTRIC ASSN INC",
+      "originalValidity": "Nested shells[-154.338219999639 57.1456800001518]",
+      "sourceComponentCount": 64,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "84",
+      "name": "A & N ELECTRIC COOP",
+      "originalValidity": "Nested shells[-75.6925138603773 37.571516872681]",
+      "sourceComponentCount": 94,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8570",
+      "name": "HIGHLINE ELECTRIC ASSN",
+      "originalValidity": "Nested shells[-102.844432863609 40.6811830829765]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "8773",
+      "name": "HOLY CROSS ELECTRIC ASSN, INC",
+      "originalValidity": "Nested shells[-106.858340876625 39.1826055098363]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "9292",
+      "name": "INTER COUNTY ENERGY COOP CORP",
+      "originalValidity": "Nested shells[-84.9595356985901 37.6492299761125]",
+      "sourceComponentCount": 12,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "9575",
+      "name": "JACKSON ENERGY COOP CORP - (KY)",
+      "originalValidity": "Nested shells[-84.010155842045 37.7205798851624]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "963",
+      "name": "ATLANTIC CITY ELECTRIC CO",
+      "originalValidity": "Nested shells[-75.0085562833399 39.4088363316647]",
+      "sourceComponentCount": 70,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "9689",
+      "name": "JEFFERSON ELECTRIC MEMBER CORP",
+      "originalValidity": "Nested shells[-82.3011142452476 33.0200734586827]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "9996",
+      "name": "CITY OF KANSAS CITY - (KS)",
+      "originalValidity": "Nested shells[-94.524813407032 38.9676409641143]",
+      "sourceComponentCount": 31,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10451",
+      "name": "KOTZEBUE ELECTRIC ASSN INC",
+      "originalValidity": "Nested shells[-163.705120000434 67.1485900001631]",
+      "sourceComponentCount": 29,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10455",
+      "name": "KOKHANOK VILLAGE COUNCIL",
+      "originalValidity": "Nested shells[-154.214210000117 59.8036399999655]",
+      "sourceComponentCount": 39,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10491",
+      "name": "KWIG POWER COMPANY",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10618",
+      "name": "LAKE REGION ELECTRIC COOPERATIVE - (MN)",
+      "originalValidity": "Nested shells[-95.7622176820462 46.7494255989258]",
+      "sourceComponentCount": 21,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "10697",
+      "name": "LAKE COUNTRY POWER",
+      "originalValidity": "Nested shells[-92.7880909928141 46.4257592560784]",
+      "sourceComponentCount": 14,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12199",
+      "name": "MONTANA-DAKOTA UTILITIES CO",
+      "originalValidity": "Nested shells[-106.959256138813 44.5441055598076]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12485",
+      "name": "MIDDLE KUSKOKWIM ELEC COOP INC",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12524",
+      "name": "MIDWEST ENERGY INC",
+      "originalValidity": "Nested shells[-100.795673925037 39.5622232053083]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12647",
+      "name": "ALLETE, INC.",
+      "originalValidity": "Nested shells[-94.7533345134323 46.3495129000289]",
+      "sourceComponentCount": 73,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12651",
+      "name": "MINNESOTA VALLEY ELECTRIC COOP",
+      "originalValidity": "Nested shells[-93.7039040321436 44.8049291012978]",
+      "sourceComponentCount": 13,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1276",
+      "name": "BARROW UTILS & ELEC COOP, INC",
+      "originalValidity": "Nested shells[-156.117800000304 70.7232600000405]",
+      "sourceComponentCount": 110,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "12825",
+      "name": "NORTHWESTERN ENERGY LLC - (MT)",
+      "originalValidity": "Nested shells[-110.913368645646 46.7709540017154]",
+      "sourceComponentCount": 21,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13211",
+      "name": "NAPAKIAK IRCINRAQ POWER CO",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13781",
+      "name": "NORTHERN STATES POWER CO - MINNESOTA",
+      "originalValidity": "Nested shells[-95.3805570483401 44.6105988307975]",
+      "sourceComponentCount": 159,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "13870",
+      "name": "NUSHAGAK ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-158.880140000323 59.1492699999703]",
+      "sourceComponentCount": 9,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14232",
+      "name": "OTTER TAIL POWER CO",
+      "originalValidity": "Nested shells[-97.1421018389479 48.1918318758758]",
+      "sourceComponentCount": 200,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14328",
+      "name": "PACIFIC GAS & ELECTRIC CO.",
+      "originalValidity": "Nested shells[-122.874592000258 38.616518999745]",
+      "sourceComponentCount": 62,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14354",
+      "name": "PACIFICORP",
+      "originalValidity": "Nested shells[-122.659481078268 42.1742302402293]",
+      "sourceComponentCount": 117,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "14711",
+      "name": "PENNSYLVANIA ELECTRIC CO",
+      "originalValidity": "Nested shells[-80.0748000002406 42.1527899998361]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15248",
+      "name": "PORTLAND GENERAL ELECTRIC CO",
+      "originalValidity": "Nested shells[-123.218987202094 45.1955180791791]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15466",
+      "name": "PUBLIC SERVICE CO OF COLORADO",
+      "originalValidity": "Nested shells[-106.112479551638 37.7559707779802]",
+      "sourceComponentCount": 121,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "15500",
+      "name": "PUGET SOUND ENERGY INC",
+      "originalValidity": "Nested shells[-121.4584359967 46.9603020009777]",
+      "sourceComponentCount": 41,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "16368",
+      "name": "RUNESTONE ELECTRIC ASSN",
+      "originalValidity": "Nested shells[-95.9175792011904 46.0576231339531]",
+      "sourceComponentCount": 25,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1675",
+      "name": "BIG HORN RURAL ELECTRIC CO",
+      "originalValidity": "Nested shells[-108.60034398424 44.8822214532181]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1738",
+      "name": "BONNEVILLE POWER ADMINISTRATION",
+      "originalValidity": "Nested shells[-123.819122556864 42.2375788117771]",
+      "sourceComponentCount": 170,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1747",
+      "name": "BIRCH CREEK VILLAGE ELEC UTIL - (AK)",
+      "originalValidity": "Nested shells[-144.197569999754 60.2981400000267]",
+      "sourceComponentCount": 139,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17593",
+      "name": "SOUTHEAST ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-104.219757589845 45.6367726192593]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17609",
+      "name": "SOUTHERN CALIFORNIA EDISON CO",
+      "originalValidity": "Nested shells[-117.962905000042 33.8325100002469]",
+      "sourceComponentCount": 61,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "17684",
+      "name": "SOUTHWEST LOUISIANA E M C",
+      "originalValidity": "Nested shells[-92.6152900002573 30.5103529998142]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18019",
+      "name": "STEARNS COOPERATIVE ELEC ASSN",
+      "originalValidity": "Nested shells[-95.0837430073797 45.7933657832276]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "18480",
+      "name": "TATITLEK ELECTRIC UTILITY",
+      "originalValidity": "Nested shells[-144.197569999754 60.2981400000267]",
+      "sourceComponentCount": 139,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "1886",
+      "name": "BLUE GRASS ENERGY COOP CORP",
+      "originalValidity": "Nested shells[-84.648278080961 37.9384122547166]",
+      "sourceComponentCount": 14,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19156",
+      "name": "POWDER RIVER ENERGY CORP",
+      "originalValidity": "Nested shells[-106.782273308946 44.3603424968258]",
+      "sourceComponentCount": 7,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "192",
+      "name": "AKIACHAK NATIVE COMMUNITY ELECTRIC",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19267",
+      "name": "TUNTUTULIAK COMM SERVICES ASSN",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19277",
+      "name": "TDX NORTH SLOPE GENERATING CO",
+      "originalValidity": "Nested shells[-156.117800000304 70.7232600000405]",
+      "sourceComponentCount": 110,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19545",
+      "name": "BLACK HILLS POWER, INC.",
+      "originalValidity": "Nested shells[-104.053956668834 43.2929895740004]",
+      "sourceComponentCount": 3,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19558",
+      "name": "HOMER ELECTRIC ASSN INC",
+      "originalValidity": "Nested shells[-151.04476000007 60.2411400001865]",
+      "sourceComponentCount": 73,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "19876",
+      "name": "VIRGINIA ELECTRIC & POWER CO",
+      "originalValidity": "Nested shells[-75.9670100001121 36.554839999842]",
+      "sourceComponentCount": 230,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "20910",
+      "name": "WOLVERINE POWER SUPPLY COOP",
+      "originalValidity": "Nested shells[-85.347767999978 44.5123430001887]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "22053",
+      "name": "KENTUCKY POWER CO",
+      "originalValidity": "Nested shells[-82.8267570772712 37.4920723639577]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "221",
+      "name": "ALASKA VILLAGE ELEC COOP, INC",
+      "originalValidity": "Nested shells[-154.364880000316 57.1436799999388]",
+      "sourceComponentCount": 220,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "26616",
+      "name": "NORTH SLOPE BOROUGH POWER & LIGHT",
+      "originalValidity": "Nested shells[-156.117800000304 70.7232600000405]",
+      "sourceComponentCount": 110,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "27000",
+      "name": "WAPA-- WESTERN AREA POWER ADMINISTRATION",
+      "originalValidity": "Nested shells[-105.053350999577 39.6265980000401]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3265",
+      "name": "CLECO POWER LLC",
+      "originalValidity": "Nested shells[-93.4172550206128 31.8234704072357]",
+      "sourceComponentCount": 11,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3465",
+      "name": "CHITINA ELECTRIC INC",
+      "originalValidity": "Nested shells[-144.197569999754 60.2981400000267]",
+      "sourceComponentCount": 139,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "3522",
+      "name": "CHUGACH ELECTRIC ASSN INC",
+      "originalValidity": "Nested shells[-151.04476000007 60.2411400001865]",
+      "sourceComponentCount": 82,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "40215",
+      "name": "CORDOVA ELECTRIC COOP, INC",
+      "originalValidity": "Nested shells[-144.197569999754 60.2981400000267]",
+      "sourceComponentCount": 139,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "40304",
+      "name": "MINNESOTA VALLEY COOP L&P ASSN",
+      "originalValidity": "Nested shells[-95.6623995412982 44.9048600461445]",
+      "sourceComponentCount": 19,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4329",
+      "name": "COPPER VALLEY ELEC ASSN, INC",
+      "originalValidity": "Nested shells[-144.197569999754 60.2981400000267]",
+      "sourceComponentCount": 139,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "4959",
+      "name": "ANIAK LIGHT & POWER CO INC",
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5109",
+      "name": "DTE ELECTRIC COMPANY",
+      "originalValidity": "Nested shells[-85.1737656859001 44.1624341010659]",
+      "sourceComponentCount": 43,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5574",
+      "name": "EAST CENTRAL ENERGY",
+      "originalValidity": "Nested shells[-92.9179745522606 46.1507678620918]",
+      "sourceComponentCount": 16,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "5580",
+      "name": "EAST KENTUCKY POWER COOP, INC",
+      "originalValidity": "Nested shells[-85.8629311362027 37.0987263463526]",
+      "sourceComponentCount": 184,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
+    },
+    {
+      "id": "56146",
+      "name": "BLACK HILLS COLORADO ELECTRIC, LLC",
+      "originalValidity": "Nested shells[-103.554473190211 37.9812289859524]",
+      "sourceComponentCount": 65,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "6452",
       "name": "FLORIDA POWER & LIGHT CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-81.7397200001369 26.0038500002534]",
+      "sourceComponentCount": 1538,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "733",
       "name": "APPALACHIAN POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-80.5828800004 37.1341099997]",
+      "sourceComponentCount": 4,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9188",
       "name": "I-N-N ELECTRIC COOP, INC",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-154.214210000117 59.8036399999655]",
+      "sourceComponentCount": 39,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9191",
       "name": "IDAHO POWER CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-113.786730118293 42.5191144951881]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9416",
       "name": "IPNATCHIAQ ELECTRIC COMPANY",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-163.705120000434 67.1485900001631]",
+      "sourceComponentCount": 29,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9417",
       "name": "INTERSTATE POWER AND LIGHT CO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-93.2658499990852 42.6823062749049]",
+      "sourceComponentCount": 5,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9832",
       "name": "KUIGGLUUM KALLUGVIA",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-163.674620000157 59.8733199999691]",
+      "sourceComponentCount": 32,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "9964",
       "name": "KENERGY CORP",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-87.5046194874312 37.8209581823011]",
+      "sourceComponentCount": 20,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2023-08-01T00:00:00Z"
     },
     {
       "id": "NA2",
       "name": "BC HYDRO",
-      "reason": "Invalid native or unavailable polygon; not repaired or scored"
+      "originalValidity": "Nested shells[-115.957801817218 51.1038913529274]",
+      "sourceComponentCount": 50,
+      "method": "GEOS union of individually valid source polygons; coverage-preservation check before simplification",
+      "sourceDate": "2015-09-30T00:00:00Z"
     }
   ],
-  "processing": "GEOS validity checks; invalid generalized polygons retried at higher/native resolution. No geometry repair. Topology-preserving generalization at 0.002 degrees for regional screening; area-based exposure is approximate.",
-  "limitations": "Archived, not current legal boundaries. Source geometries may be county approximations, overlap or omit territories. Source attributes have varying vintages. STATE and CITY are provider entity attributes, not a computed list of every state/city intersecting the territory. Customers are entity totals from YEAR, never modeled exposed customers."
+  "normalizedCount": 234,
+  "normalizationRetrievedAt": "2026-10-10T07:26:16.589267Z"
 }

@@ -76,6 +76,13 @@ export interface UtilityProperties {
   city?: string;
   customerYear?: string | null;
   boundarySource?: string;
+  geometryProcessing?: string;
+}
+export interface UtilityCoverage {
+  sourceRecordCount: number;
+  includedCount: number;
+  normalizedCount: number;
+  excluded: { id: string; name: string; reason: string }[];
 }
 export type UtilityFeature = Feature<Area, UtilityProperties>;
 export type HazardFeature = Feature<Area, StormProperties>;
@@ -126,6 +133,7 @@ export interface DashboardData {
   fetchedAt: string;
   forecastTimes: string[];
   weights: Weights;
+  utilityCoverage?: UtilityCoverage;
 }
 export const emptyCollection = <
   G extends import("geojson").Geometry,

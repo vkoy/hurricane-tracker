@@ -2962,7 +2962,9 @@ h1 {
     padding: 5px;
   }
   .basemap-button > span:last-child {
-    display: none;
+    display: block;
+    max-width: 110px;
+    font-size: 7px;
   }
   .coordinates {
     display: none;
@@ -3136,3 +3138,6 @@ h1 {
   color: #8da7b8;
   margin-top: 3px;
 }
+/* Source quality disclosure stays readable in the mobile data drawer. */
+.coverage-gaps { max-height: 230px; overflow-y: auto; padding-left: 20px; }
+.coverage-gaps li { margin: 10px 0; line-height: 1.5; }

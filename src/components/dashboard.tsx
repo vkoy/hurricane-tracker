@@ -1524,6 +1524,9 @@ function UtilityDetails({
           Territory source
           <ExternalLink size={12} />
         </a>
+        {p.geometryProcessing && (
+          <p className="detail-note">{p.geometryProcessing}</p>
+        )}
       </DetailSection>
       <DetailSection title="Active hurricane exposure">
         <DetailRow label="Storm" value={storm?.name ?? "Not assessed"} />
@@ -1693,6 +1696,50 @@ function SourcesPanel({
           risk.
         </p>
       </div>
+      {data?.utilityCoverage && (
+        <article className="source-card">
+          <h3>Utility boundary coverage</h3>
+          <p>
+            <strong>
+              {data.utilityCoverage.includedCount.toLocaleString()} /{" "}
+              {data.utilityCoverage.sourceRecordCount.toLocaleString()}
+            </strong>{" "}
+            source records available. {data.utilityCoverage.normalizedCount}{" "}
+            recovered by dissolving overlapping valid source polygons.
+          </p>
+          <p>
+            The source remains archived. This record count is not the percentage
+            of U.S. land or customers covered. Missing territories are not
+            low-risk territories.
+          </p>
+          <details>
+            <summary>
+              {data.utilityCoverage.excluded.length} excluded territories · view
+              coverage gaps
+            </summary>
+            <ul className="coverage-gaps">
+              {data.utilityCoverage.excluded.map((item) => (
+                <li key={item.id}>
+                  <strong>{item.name}</strong>
+                  <br />
+                  {item.reason}
+                </li>
+              ))}
+            </ul>
+          </details>
+        </article>
+      )}
+      <article className="source-card">
+        <h3>Deployment monitoring</h3>
+        <p>
+          Server availability and data readiness are checked separately. The
+          data check evaluates feed freshness, utility loading, and writable
+          cache storage.
+        </p>
+        <a href="/api/health/data" target="_blank" rel="noreferrer">
+          View deployment health report <ExternalLink size={12} />
+        </a>
+      </article>
       {data?.sources.map((s) => (
         <article className="source-card" key={s.id}>
           <div>

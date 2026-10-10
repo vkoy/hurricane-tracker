@@ -1,0 +1,23 @@
+name: Monitor deployment
+on:
+  schedule:
+    - cron: "7,17,27,37,47,57 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deployment-monitor
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Check official feeds and cache storage
+        env:
+          STORMGRID_MONITOR_URL: ${{ vars.STORMGRID_MONITOR_URL || 'https://hurricane-tracker-3cdl.onrender.com' }}
+        run: node scripts/check-deployment.mjs

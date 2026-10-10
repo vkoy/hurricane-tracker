@@ -10,3 +10,5 @@ test-results/
 .stormgrid-cache/
 *.log
 public/vendor/maplibre-gl-worker.mjs
+__pycache__/
+*.pyc
